@@ -1,0 +1,409 @@
+{
+	"vacunas": [{
+			"informativas": [{
+					"nombre": "Hepatitis B",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra formas graves de tuberculosis, en especial contra tuberculosis miliar y meningitis tuberculosa. La efectividad de la vacuna es de aproximadamente 78% en áreas endémicas (México es área endémica de la enfermedad).\n¿Qué riesgos a la salud presenta la enfermedad?\n Tuberculosis Miliar: Si no se trata la enfermedad suele ser mortal, aunque la mortalidad disminuye hasta el 47-5% si es diagnosticada y tratada a tiempo. Meningitis Tuberculosa: enfermedad febril subaguda que progresa a través de tres fases: La fase prodrómica: malestar general, cansancio, dolor de cabeza, fiebre leve y cambio de personalidad. La fase meningítica: características neurológicas más pronunciadas, como meningismo, dolor de cabeza prolongado, vómitos, letargo, confusión. La fase paralítica: estupor y el coma, las convulsiones y, a menudo, la parálisis. Para la mayoría de los pacientes no tratados, la muerte se produce dentro de las cinco a ocho semanas del inicio de la enfermedad.",
+					"edad": "Nacimiento, 2 y 6 meses",
+					"categorias": "Bebe"
+				},
+				{
+					"nombre": "BCG",
+					"descripcion": "¿Qué enfermedad previene?\n Previene infección por virus de la hepatitis B y sus consecuencias potenciales (Hepatitis aguda y crónica, insuficiencia y cirrosis hepática y el carcinoma hepatocelular).\n¿Qué riesgos a la salud presenta la enfermedad?\n Las secuelas de la infección crónica por el virus de la hepatitis B (VHB) varían desde un estado de portador inactivo hasta el desarrollo de cirrosis, descompensación hepática, carcinoma hepatocelular (HCC), manifestaciones extrahepáticas y muerte. El pronóstico parece variar con el entorno clínico. HEPATITIS AGUDA: Aproximadamente el 70% de los pacientes con infección aguda por el virus de la hepatitis B no tienen síntomas, mientras que el 30% desarrolla hepatitis con ictericia (coloración amarillenta de la piel). La falla hepática fulminante es inusual y ocurre aproximadamente en 0.1 a 0.5% de los pacientes. HEPATITIS CRÓNICA: solo se produce un historial de hepatitis aguda en un pequeño porcentaje de pacientes con infección crónica por el virus de la hepatitis B. La falla hepática fulminante es inusual y ocurre aproximadamente en 0.1 a 0.5% de los pacientes.",
+					"edad": "Nacimiento",
+					"categorias": "Bebe"
+				},
+				{
+					"nombre": "Pentavalente Acelular",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra infecciones causadas por Difteria, Tosferina, Tétanos, Haemophilus influenzae y virus de la Poliomielitis\n¿Qué riesgos a la salud presenta la enfermedad?\n •Difteria: Además de los síntomas respiratorios, la absorción y diseminación de la toxina diftérica puede causar daño al corazón (miocarditis), sistema nervioso y riñones.•La tos ferina, es una enfermedad respiratoria aguda muy contagiosa causada por Bordetella pertussis. En la era de la pre-vacuna, la enfermedad afectaba predominantemente a niños <10 años de edad y generalmente se manifestaba como una enfermedad prolongada de la tos con uno o más de los síntomas clásicos: grito inspiratorio, tos paroxística y vómitos.Las complicaciones de la tos ferina pueden estar relacionadas con la infección (p. Ej., Neumonía, otitis media) o las secuelas mecánicas de la tos grave (p. Ej., Hemorragia subconjuntival, desarrollo o exacerbación de hernia de la pared abdominal, fracturas costales, incontinencia urinaria o distensión lumbar). En raras ocasiones, la tos vigorosa puede causar problemas más graves, como hemorragia intracraneal, accidente cerebrovascular debido a disección de la arteria carótida o vertebral y encefalopatía o convulsiones. •El tétanos es un trastorno del sistema nervioso caracterizado por espasmos musculares causados por la bacteria  Clostridium tetani productor de toxinas, que se encuentra en el suelo. Las tasas de letalidad para el tétanos no neonatal en los países en desarrollo oscilan entre el 8 y el 50%, mientras que la mayoría de los pacientes con tétanos se recuperan cuando hay disponible una atención de apoyo moderna. El tétanos neonatal casi siempre mortal, ahora tiene tasas de mortalidad del 3 al 88 %. •Haemophilus influenzae serotipo b (Hib): Es de las principales causas de meningitis bacteriana y una causa frecuente de otras enfermedades invasivas (por ejemplo, epiglotitis, neumonía, artritis séptica, bacteriemia), particularmente en la primera infancia. •Poliomielitis: Aunque la poliomielitis ya no representa la amenaza para la salud pública mundial que alguna vez tuvo, todavía existen pequeñas áreas de poliovirus endémico de tipo salvaje en Asia y África. La comprensión de este virus y otros enterovirus es importante en la evaluación del paciente con parálisis flácida aguda. La debilidad puede variar de un músculo o grupo de músculos a tetraplejia e insuficiencia respiratoria. El tono se reduce, casi siempre de manera asimétrica. Los músculos proximales generalmente se afectan más que los músculos distales y las piernas más comúnmente que los brazos. Los reflejos están disminuidos o ausentes. El examen sensorial es casi siempre normal. El tratamiento de la poliomielitis es de apoyo, incluido el alivio del dolor y la fisioterapia. Se puede desarrollar falla respiratoria que requiere ventilación mecánica. Los pacientes con compromiso bulbar requieren una estrecha vigilancia del estado cardiovascular debido a la asociación con las fluctuaciones de la presión arterial, el colapso circulatorio y la disfunción autonómica. Estos pacientes pueden requerir intubación para la protección de las vías respiratorias.",
+					"edad": "2, 4, 6 y 18 meses",
+					"categorias": "Bebe"
+				},
+				{
+					"nombre": "Rotavirus",
+					"descripcion": " ¿Qué enfermedad previene?\n Protege contra diarrea por rotavirus\n¿Qué riesgos a la salud presenta la enfermedad?\n Los rotavirus se encuentran entre los primeros agentes virales identificados como causas importantes de gastroenteritis viral, particularmente en niños entre las edades de seis meses y dos años. La gastroenteritis por rotavirus se ha observado en asociación con otros síndromes clínicos: •Enterocolitis necrotizante. •Intususcepción: la relación entre la infección por rotavirus y la invaginación intestinal es incierta. Se ha descrito la obstrucción gastrointestinal por intususcepción del intestino delgado en asociación con gastroenteritis por rotavirus. •Atresia biliar: La atresia biliar se ha descrito en asociación con la infección por rotavirus, y el antígeno rotavirus se ha detectado en el tejido biliar en algunos pacientes. •Implicación del sistema nervioso central: la gastroenteritis por rotavirus puede asociarse con complicaciones del sistema nervioso central, incluidas convulsiones y encefalopatía. •Síntomas gastrointestinales prolongados: la mayoría de las personas se recuperan por completo de la gastroenteritis por rotavirus. En algunos casos, se han observado síntomas persistentes como diarrea prolongada o gastroparesia. Además, la intolerancia a carbohidratos o lactasa puede persistir después de la resolución de la diarrea.",
+					"edad": "2, 4, y 6 meses",
+					"categorias": "Bebe"
+				},
+				{
+					"nombre": "Neumocócica Conjugada",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra infecciones causadas por Streptococus pneumoniae (13valente serotipos: 1, 2, 3, 4, 5, 6A, 6B, 7F, 9V, 14, 18C, 19A, 19F, 23F).\n¿Qué riesgos a la salud presenta la enfermedad?\n El neumococo (Streptococcus pneumoniae) es una causa común de infección bacteriana invasiva en niños y una causa frecuente de neumonía adquirida en la comunidad (NAC). La resistencia intermedia o de alto nivel a la penicilina se ha convertido en un problema importante. Los niños, particularmente los que están en centros de cuidado infantil y aquellos que reciben cursos frecuentes de antibióticos, parecen ser portadores importantes de cepas resistentes. La neumonía es la enfermedad más común que causa la muerte en niños en todo el mundo. La neumonía adquirida en la comunidad (NAC) puede ser causada por una variedad de patógenos bacterianos y virales, y el patógeno predominante varía según la edad. En general, S. pneumoniae es la causa bacteriana más común de NAC, aunque en muchos casos no se puede aislar un organismo.",
+					"edad": "2, 4 y 12 meses",
+					"categorias": "Bebe"
+				},
+				{
+					"nombre": "Influenza",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra infección por virus de la influenza, se prefiere usar en el mes de Octubre. Anual a partir de 1 año hasta los 10 años.\n¿Qué riesgos a la salud presenta la enfermedad?\n La influenza ocurre en distintos brotes de diversa magnitud cada año. Este patrón epidemiológico refleja la naturaleza cambiante de las propiedades antigénicas de los virus de la influenza, y su posterior diseminación depende de múltiples factores, incluida la transmisibilidad del virus y la susceptibilidad de la población. Entre 1976 y 2007, las muertes anuales relacionadas con la influenza por causas respiratorias y circulatorias (incluyendo neumonía e influenza) oscilaron entre 3349 y 48,614, y la tasa anual de muertes asociadas a la influenza varió de 1.4 a 16.7 muertes por 100,000 personas. Debido, al menos en parte, a las altas tasas de ataque, la morbilidad causada por la influenza en la población general es sustancial. Entre los adultos, las mayores tasas de morbilidad y mortalidad se asocian con la edad avanzada y con comorbilidades subyacentes. ",
+					"edad": "6 y 7 meses, despues anual hasta los 10 años",
+					"categorias": "Bebe"
+				},
+				{
+					"nombre": "Triple Viral (SRP)",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra infecciones causadas por virus del Sarampión, Virus de la Rubeola y Parotiditis.\n¿Qué riesgos a la salud presenta la enfermedad?\n •Sarampión es una enfermedad viral altamente contagiosa que ocurre en todo el mundo. La infección se caracteriza por fiebre, malestar general, tos, coriza y conjuntivitis, seguida de exantema. Después de la exposición, aproximadamente el 90% de las personas susceptibles desarrollará sarampión. Se estima que el período de contagio es de cinco días antes de la aparición de la erupción hasta cuatro días después. La enfermedad puede transmitirse en espacios públicos, incluso en ausencia de contacto de persona a persona. Una o más complicaciones ocurren en aproximadamente el 30 por ciento de los casos de sarampión. La diarrea es la complicación más común; la mayoría de las muertes se deben a complicaciones del tracto respiratorio o encefalitis. La otitis media ocurre en 5 a 10% de los casos y es más común en individuos más jóvenes. El riesgo de complicaciones aumenta en los países en desarrollo, donde la tasa de letalidad es del 4 al 10%. •Rubeola: es una enfermedad causada por un virus, puede tener complicaciones durante el embarazo para la madre y especialmente el feto. Las manifestaciones clínicas de la rubéola adquirida postnatal son generalmente leves, y muchos casos son subclínicos o asintomáticos. La enfermedad entre los niños tiende a ser más leve que la enfermedad entre los adultos, con menos síntomas prodrómicos y complicaciones. Las manifestaciones clínicas de la infección de rubéola postnatal entre los niños suelen incluir el inicio agudo de una erupción maculopapular (ronchas) con síntomas sistémicos mínimos y fiebre de bajo grado. •Parotiditis: Las paperas son una enfermedad viral contagiosa que en gran parte se puede prevenir a través de la vacunación. Por lo general, comienza con unos días de fiebre, dolor de cabeza, dolor muscular, fatiga y anorexia, seguidos de parotiditis; la enfermedad suele ser autolimitada. Las complicaciones de las paperas pueden incluir orquitis y manifestaciones neurológicas (que incluyen meningitis, encefalitis y sordera); esto puede ocurrir incluso entre individuos vacunados que desarrollan paperas. Las complicaciones de las paperas pueden ocurrir en ausencia de parotiditis. ",
+					"edad": "12 meses y 6 años",
+					"categorias": "Bebe"
+				},
+				{
+					"nombre": "DPT",
+					"descripcion": "¿Qué enfermedad previene?\n Refuerzo que protege contra Difteria, Tosferina y Tétanos.\n¿Qué riesgos a la salud presenta la enfermedad?\n •Difteria: Además de los síntomas respiratorios, la absorción y diseminación de la toxina diftérica puede causar daño al corazón (miocarditis), sistema nervioso y riñones. •La tos ferina, es una enfermedad respiratoria aguda muy contagiosa causada por Bordetella pertussis. En la era de la pre-vacuna, la enfermedad afectaba predominantemente a niños <10 años de edad y generalmente se manifestaba como una enfermedad prolongada de la tos con uno o más de los síntomas clásicos: grito inspiratorio, tos paroxística y vómitos. Las complicaciones de la tos ferina pueden estar relacionadas con la infección (p. Ej., Neumonía, otitis media) o las secuelas mecánicas de la tos grave (p. Ej., Hemorragia subconjuntival, desarrollo o exacerbación de hernia de la pared abdominal, fracturas costales, incontinencia urinaria o distensión lumbar). En raras ocasiones, la tos vigorosa puede causar problemas más graves, como hemorragia intracraneal, accidente cerebrovascular debido a disección de la arteria carótida o vertebral y encefalopatía o convulsiones. •El tétanos es un trastorno del sistema nervioso caracterizado por espasmos musculares causados por la bacteria  Clostridium tetani productor de toxinas, que se encuentra en el suelo. Las tasas de letalidad para el tétanos no neonatal en los países en desarrollo oscilan entre el 8 y el 50%, mientras que la mayoría de los pacientes con tétanos se recuperan cuando hay disponible una atención de apoyo moderna. El tétanos neonatal casi siempre mortal, ahora tiene tasas de mortalidad del 3 al 88 %. •DPT: después de la última dosis (4 años), se realiza un refuerzo cada 10 años ",
+					"edad": "4 años, refuerzo a los 6 años",
+					"categorias": "Bebe"
+				},
+				{
+					"nombre": "SABIN",
+					"descripcion": "¿Qué enfermedad previene?\n(Vía oral) Protege contra el virus de la poliomielitis. Se administra en semanas nacional de vacunación, solo si se han administrado dos dosis de Pentavalente Acelular, puede administrarse desde los 6 meses hasta los 5 años.\n¿Qué riesgos a la salud presenta la enfermedad?\n Poliomielitis: Aunque la poliomielitis ya no representa la amenaza para la salud pública mundial que alguna vez tuvo, todavía existen pequeñas áreas de poliovirus endémico de tipo salvaje en Asia y África. La comprensión de este virus y otros enterovirus es importante en la evaluación del paciente con parálisis flácida aguda. La debilidad puede variar de un músculo o grupo de músculos a tetraplejia e insuficiencia respiratoria. El tono se reduce, casi siempre de manera asimétrica. Los músculos proximales generalmente se afectan más que los músculos distales y las piernas más comúnmente que los brazos. Los reflejos están disminuidos o ausentes. El examen sensorial es casi siempre normal. El tratamiento de la poliomielitis es de apoyo, incluido el alivio del dolor y la fisioterapia. Se puede desarrollar falla respiratoria que requiere ventilación mecánica. Los pacientes con compromiso bulbar requieren una estrecha vigilancia del estado cardiovascular debido a la asociación con las fluctuaciones de la presión arterial, el colapso circulatorio y la disfunción autonómica. Esos pacientes pueden requerir intubación para la protección de las vías respiratorias. ",
+					"edad": "6 meses - 5 años",
+					"categorias": "Bebe"
+				},
+				{
+					"nombre": "SR",
+					"descripcion": "¿Qué enfermedad previene?\nProtege contra infecciones causadas por virus del Sarampión y Virus de la Rubéola \n¿Qué riesgos a la salud presenta la enfermedad?\n•Sarampión es una enfermedad viral altamente contagiosa que ocurre en todo el mundo. La infección se caracteriza por fiebre, malestar general, tos, coriza y conjuntivitis, seguida de exantema. Después de la exposición, aproximadamente el 90% de las personas susceptibles desarrollará sarampión. Se estima que el período de contagio es de cinco días antes de la aparición de la erupción hasta cuatro días después. La enfermedad puede transmitirse en espacios públicos, incluso en ausencia de contacto de persona a persona. Una o más complicaciones ocurren en aproximadamente el 30 por ciento de los casos de sarampión. La diarrea es la complicación más común; la mayoría de las muertes se deben a complicaciones del tracto respiratorio o encefalitis. La otitis media ocurre en 5 a 10% de los casos y es más común en individuos más jóvenes. El riesgo de complicaciones aumenta en los países en desarrollo, donde la tasa de letalidad es del 4 al 10%. •Rubéola: es una enfermedad causada por un virus, puede tener complicaciones durante el embarazo para la madre y especialmente el feto. Las manifestaciones clínicas de la rubéola adquirida postnatal son generalmente leves, y muchos casos son subclínicos o asintomáticos. La enfermedad entre los niños tiende a ser más leve que la enfermedad entre los adultos, con menos síntomas prodrómicos y complicaciones. Las manifestaciones clínicas de la infección de rubéola postnatal entre los niños suelen incluir el inicio agudo de una erupción maculopapular (ronchas) con síntomas sistémicos mínimos y fiebre de bajo grado. ",
+					"edad": "Vacuna adicional, acuda a unidad de salud",
+					"categorias": "Bebe"
+				},
+				{
+					"nombre": "VPH",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra infecciones por virus del papiloma humano, verrugas genitales y cáncer cervicouterino. (VPH tipo 6, 11, 16 y 18 la vacuna Gardasil). Solo en niñas mayores de 9 años:  Se recomienda aplicar en 5° grado o a los 11-12 años.\n¿Qué riesgos a la salud presenta la enfermedad?\n El VPH se transmite desde la superficie de la piel a la superficie de la piel, y las infecciones cutáneas por VPH están diseminadas por toda la población general. En todo el mundo, el cáncer de cuello uterino es el cuarto cáncer más común entre las mujeres, con aproximadamente 530,000 casos de carcinoma de cuello uterino invasivo diagnosticado y 260,000 muertes por cáncer cervical anualmente. Los tipos de VPH 16 y 18 representan el 71 por ciento de los casos en general. Las verrugas ocurren en el 10 %, con una incidencia máxima entre las edades de 12 y 16. Las verrugas no genitales no se limitan únicamente a la población pediátrica; hasta el 3.5 por ciento de los adultos tienen verrugas no genitales en un momento dado. Las verrugas comunes representan hasta el 71 %de todas las verrugas cutáneas seguidas en frecuencia por verrugas plantares y verrugas planas (34 y 4%, respectivamente). El contacto personal cercano es importante para la transmisión de las verrugas cutáneas. Verrugas genitales: ocurren con mayor frecuencia en personas entre las edades de 17 y 33 años, y la incidencia máxima está en personas entre 20 y 24 años. Los tipos de VPH 6 y 11 causan aproximadamente el 90% de las verrugas genitales, las cuales en el embarazo tienen riesgo de infección al bebé al momento del parto. ",
+					"edad": "9-26 años",
+					"categorias": "Adolescente"
+				},
+				{
+					"nombre": "Hepatitis B",
+					"descripcion": "¿Qué enfermedad previene? \n Previene infección por virus de la hepatitis B y sus consecuencias potenciales (Hepatitis aguda y crónica, insuficiencia y cirrosis hepática y el carcinoma hepatocelular).\n ¿Qué riesgos a la salud presenta la enfermedad? \n • Las secuelas de la infección crónica por el virus de la hepatitis B (VHB) varían desde un estado de portador inactivo hasta el desarrollo de cirrosis, descompensación hepática, carcinoma hepatocelular (HCC), manifestaciones extrahepáticas y muerte. El pronóstico parece variar con el entorno clínico. • HEPATITIS AGUDA: Aproximadamente el 70% de los pacientes con infección aguda por el virus de la hepatitis B no tienen síntomas, mientras que el 30% desarrolla hepatitis con ictericia (coloración amarillenta de la piel).  •La falla hepática fulminante es inusual y ocurre aproximadamente en 0.1 a 0.5% de los pacientes. • HEPATITIS CRÓNICA: solo se produce un historial de hepatitis aguda en un pequeño porcentaje de pacientes con infección crónica por el virus de la hepatitis B. • La falla hepática fulminante es inusual y ocurre aproximadamente en 0.1 a 0.5% de los pacientes. • Se utiliza solo si no se han vacunado antes: A partir de los 11 años ",
+					"edad": "A partir de 11 años",
+					"categorias": "Adolescente"
+				},
+				{
+					"nombre": "Td",
+					"descripcion": "¿Qué enfermedad previene?\n Vacuna que  protege contra Difteria y Tétanos. \n¿Qué riesgos a la salud presenta la enfermedad?\n •Difteria: Además de los síntomas respiratorios, la absorción y diseminación de la toxina diftérica puede causar daño al corazón (miocarditis), sistema nervioso y riñones. •El tétanos es un trastorno del sistema nervioso caracterizado por espasmos musculares causados por la bacteria  Clostridium tetani productor de toxinas, que se encuentra en el suelo. Las tasas de letalidad para el tétanos no neonatal en los países en desarrollo oscilan entre el 8 y el 50%, mientras que la mayoría de los pacientes con tétanos se recuperan cuando hay disponible una atención de apoyo moderna. El tétanos neonatal casi siempre mortal, ahora tiene tasas de mortalidad del 3 al 88 %. ",
+					"edad": "11 años",
+					"categorias": "Adolescente"
+				},
+				{
+					"nombre": "Tdpa",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra Difteria, Tosferina y Tétanos.\n¿Qué riesgos a la salud presenta la enfermedad?\n •Difteria: Además de los síntomas respiratorios, la absorción y diseminación de la toxina diftérica puede causar daño al corazón (miocarditis), sistema nervioso y riñones. •La tos ferina, es una enfermedad respiratoria aguda muy contagiosa causada por Bordetella pertussis. En la era de la prevacuna, la enfermedad afectaba predominantemente a niños <10 años de edad y generalmente se manifestaba como una enfermedad prolongada de la tos con uno o más de los síntomas clásicos: grito inspiratorio, tos paroxística y vómitos.Las complicaciones de la tos ferina pueden estar relacionadas con la infección (p. Ej., Neumonía, otitis media) o las secuelas mecánicas de la tos grave (p. Ej., Hemorragia subconjuntival, desarrollo o exacerbación de hernia de la pared abdominal, fracturas costales, incontinencia urinaria o distensión lumbar). En raras ocasiones, la tos vigorosa puede causar problemas más graves, como hemorragia intracraneal, accidente cerebrovascular debido a disección de la arteria carótida o vertebral y encefalopatía o convulsiones. •El tétanos es un trastorno del sistema nervioso caracterizado por espasmos musculares causados por la bacteria  Clostridium tetani productor de toxinas, que se encuentra en el suelo. Las tasas de letalidad para el tétanos no neonatal en los países en desarrollo oscilan entre el 8 y el 50%, mientras que la mayoría de los pacientes con tétanos se recuperan cuando hay disponible una atención de apoyo moderna. El tétanos neonatal casi siempre mortal, ahora tiene tasas de mortalidad del 3 al 88 %. ",
+					"edad": "20 semanas de gestación durante embarazo",
+					"categorias": "Adolescente"
+				},
+				{
+					"nombre": "Influenza",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra infección por virus de la influenza, se prefiere usar en el mes de Octubre.\n¿Qué riesgos a la salud presenta la enfermedad?\n La influenza ocurre en distintos brotes de diversa magnitud cada año. Este patrón epidemiológico refleja la naturaleza cambiante de las propiedades antigénicas de los virus de la influenza, y su posterior diseminación depende de múltiples factores, incluida la transmisibilidad del virus y la susceptibilidad de la población. Entre 1976 y 2007, las muertes anuales relacionadas con la influenza por causas respiratorias y circulatorias (incluyendo neumonía e influenza) oscilaron entre 3349 y 48,614, y la tasa anual de muertes asociadas a la influenza varió de 1.4 a 16.7 muertes por 100,000 personas. Debido, al menos en parte, a las altas tasas de ataque, la morbilidad causada por la influenza en la población general es sustancial. Entre los adultos, las mayores tasas de morbilidad y mortalidad se asocian con la edad avanzada y con comorbilidades subyacentes. Se recomienda la administración de la vacuna de la influenza trivalente inactivada (mayores de 18 años). Se recomienda la aplicación en el segundo o tercer trimestre del embarazo (6 meses), pero su uso es seguro durante todo el embarazo.",
+					"edad": "Final del 2° trimestre del embarazo",
+					"categorias": "Adolescente"
+				},
+				{
+					"nombre": "Doble Viral (SR)",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra infecciones causadas por virus del Sarampión y Virus de la Rubeola\n¿Qué riesgos a la salud presenta la enfermedad?\n • Sarampión es una enfermedad viral altamente contagiosa que ocurre en todo el mundo. La infección se caracteriza por fiebre, malestar general, tos, coriza y conjuntivitis, seguida de exantema. Después de la exposición, aproximadamente el 90% de las personas susceptibles desarrollará sarampión. Se estima que el período de contagio es de cinco días antes de la aparición de la erupción hasta cuatro días después. La enfermedad puede transmitirse en espacios públicos, incluso en ausencia de contacto de persona a persona. Una o más complicaciones ocurren en aproximadamente el 30 por ciento de los casos de sarampión. La diarrea es la complicación más común; la mayoría de las muertes se deben a complicaciones del tracto respiratorio o encefalitis. La otitis media ocurre en 5 a 10% de los casos y es más común en individuos más jóvenes. El riesgo de complicaciones aumenta en los países en desarrollo, donde la tasa de letalidad es del 4 al 10%. •Rubeola: es una enfermedad causada por un virus, puede tener complicaciones durante el embarazo para la madre y especialmente el feto. Las manifestaciones clínicas de la rubéola adquirida postnatal son generalmente leves, y muchos casos son subclínicos o asintomáticos. La enfermedad entre los niños tiende a ser más leve que la enfermedad entre los adultos, con menos síntomas prodrómicos y complicaciones. Las manifestaciones clínicas de la infección de rubéola postnatal entre los niños suelen incluir el inicio agudo de una erupción maculopapular (ronchas) con síntomas sistémicos mínimos y fiebre de bajo grado. ",
+					"edad": "Adolescentes que tengan esquema incompleto o no fueron vacunados con Triple Viral",
+					"categorias": "Adolescente"
+				},
+				{
+					"nombre": "Hepatitis B",
+					"descripcion": "¿Qué enfermedad previene?\n Previene infección por virus de la hepatitis B y sus consecuencias potenciales (Hepatitis aguda y crónica, insuficiencia y cirrosis hepática y el carcinoma hepatocelular).\n¿Qué riesgos a la salud presenta la enfermedad?\n La transmisión de la enfermedad a los bebés en madres portadoras ocurre en hasta el 90% de los casos en caso de no vacunarse en el embarazo. La mayoría de los bebés con infección de hepatitis B durante el embarazo desarrollan infección crónica, lo cual aumenta considerablemente el riesgo de cirrosis hepática y carcinoma hepatocelular. Se recomienda administrar en pacientes con factores de riesgo para la enfermedad: •Tener más de una pareja sexual durante los últimos 6 meses. •Si ha sido evaluado o atendido por enfermedad de transmisión sexual previa. •Uso de drogas inyectables recientes. • Tener una pareja sexual positiva para Hepatitis B ",
+					"edad": "Más de 20 Semanas de gestación (2° trimestre) del embarazo",
+					"categorias": "Embarazada"
+				},
+				{
+					"nombre": "Tdpa",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra Difteria, Tosferina y Tétanos.\n¿Qué riesgos a la salud presenta la enfermedad?\n •Difteria: Además de los síntomas respiratorios, la absorción y diseminación de la toxina diftérica puede causar daño al corazón (miocarditis), sistema nervioso y riñones. •La tos ferina, es una enfermedad respiratoria aguda muy contagiosa causada por Bordetella pertussis. En la era de la pre-vacuna, la enfermedad afectaba predominantemente a niños <10 años de edad y generalmente se manifestaba como una enfermedad prolongada de la tos con uno o más de los síntomas clásicos: grito inspiratorio, tos paroxística y vómitos.Las complicaciones de la tos ferina pueden estar relacionadas con la infección (p. Ej., Neumonía, otitis media) o las secuelas mecánicas de la tos grave (p. Ej., Hemorragia subconjuntival, desarrollo o exacerbación de hernia de la pared abdominal, fracturas costales, incontinencia urinaria o distensión lumbar). En raras ocasiones, la tos vigorosa puede causar problemas más graves, como hemorragia intracraneal, accidente cerebrovascular debido a disección de la arteria carótida o vertebral y encefalopatía o convulsiones. •El tétanos es un trastorno del sistema nervioso caracterizado por espasmos musculares causados por la bacteria  Clostridium tetani productor de toxinas, que se encuentra en el suelo. Las tasas de letalidad para el tétanos no neonatal en los países en desarrollo oscilan entre el 8 y el 50%, mientras que la mayoría de los pacientes con tétanos se recuperan cuando hay disponible una atención de apoyo moderna. El tétanos neonatal casi siempre mortal, ahora tiene tasas de mortalidad del 3 al 88 %.",
+					"edad": "Más de 20 Semanas de gestación (2° trimestre) del embarazo",
+					"categorias": "Embarazada"
+				},
+				{
+					"nombre": "Influenza",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra infección por virus de la influenza, se prefiere usar en el mes de Octubre.\n¿Qué riesgos a la salud presenta la enfermedad?\n La influenza ocurre en distintos brotes de diversa magnitud cada año. Este patrón epidemiológico refleja la naturaleza cambiante de las propiedades antigénicas de los virus de la influenza, y su posterior diseminación depende de múltiples factores, incluida la transmisibilidad del virus y la susceptibilidad de la población. Entre 1976 y 2007, las muertes anuales relacionadas con la influenza por causas respiratorias y circulatorias (incluyendo neumonía e influenza) oscilaron entre 3349 y 48,614, y la tasa anual de muertes asociadas a la influenza varió de 1.4 a 16.7 muertes por 100,000 personas. Debido, al menos en parte, a las altas tasas de ataque, la morbilidad causada por la influenza en la población general es sustancial. Entre los adultos, las mayores tasas de morbilidad y mortalidad se asocian con la edad avanzada y con comorbilidades subyacentes. Se recomienda la administración de la vacuna de la influenza trivalente inactivada (mayores de 18 años). Se recomienda la aplicación en el segundo o tercer trimestre del embarazo (6 meses), pero su uso es seguro durante todo el embarazo. ",
+					"edad": "Más de 20 Semanas de gestación (2° trimestre) del embarazo",
+					"categorias": "Embarazada"
+				},
+				{
+					"nombre": "Influeza",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra infección por virus de la influenza, se prefiere usar en el mes de Octubre.\n¿Qué riesgos a la salud presenta la enfermedad?\n La influenza ocurre en distintos brotes de diversa magnitud cada año. Este patrón epidemiológico refleja la naturaleza cambiante de las propiedades antigénicas de los virus de la influenza, y su posterior diseminación depende de múltiples factores, incluida la transmisibilidad del virus y la susceptibilidad de la población. Entre 1976 y 2007, las muertes anuales relacionadas con la influenza por causas respiratorias y circulatorias (incluyendo neumonía e influenza) oscilaron entre 3349 y 48,614, y la tasa anual de muertes asociadas a la influenza varió de 1.4 a 16.7 muertes por 100,000 personas. Debido, al menos en parte, a las altas tasas de ataque, la morbilidad causada por la influenza en la población general es sustancial. Entre los adultos, las mayores tasas de morbilidad y mortalidad se asocian con la edad avanzada y con comorbilidades subyacentes. Se recomienda la administración de la vacuna de la influenza trivalente inactivada (mayores de 18 años). Se recomienda la aplicación en el segundo o tercer trimestre del embarazo (6 meses), pero su uso es seguro durante todo el embarazo.",
+					"edad": "Mayores de 55 años",
+					"categorias": "Adulto"
+				},
+				{
+					"nombre": "Neumocócica 23-valente",
+					"descripcion": "¿Qué enfermedad previene?\n Protege contra infección por Streptococus pneumoniae, causante de neumonía en personas mayores.\n¿Qué riesgos a la salud presenta la enfermedad?\n Los adultos de 65 años en adelante representan más del 50% de todas las neumonías. Es una de las principales causas de hospitalización y muerte en adultos.  Se recomienda la vacunación en adultos de las siguientes características: •65 años o más. •Personas de entre 19-64 años con:  oEnfermedad pulmonar crónica (incluyendo asma). o  Personas con enfermedad cardiaca crónica (excepto Hipertensión) o Pacientes con enfermedades crónicas hepáticas, renales y metabólicas (diabetes mellitus). oPersonas con inmunodeficiencias (VIH). oPersonas con desordenes cognitivos y desordenes neuromusculares. oPersonas que fuman, con alcoholismo.. oPersonas con tumores malignos o que reciben quimioterapia. •Personas que viven en casas de cuidados. ",
+					"edad": "Mayores de 65 años",
+					"categorias": "Adulto"
+				}
+			]
+		},
+		{
+			"experto": [{
+					"nombre": "BCG",
+					"categoria": "Bebe",
+					"edad": "0",
+					"anual": "No",
+					"contraindicaciones": "Está contraindicada la vacuna BCG en menores de 2000 g, Padecimientos febriles agudos con fiebre mayor de 38.5 °C, Dermatitis progresiva, el eczema no es contraindicación, Enfermos de Leucemia, Cuadro clínico de SIDA (asintomáticos con VIH no está contraindicado), Transfusiones o inmunoglobulina (esperar 3 meses), Embarazo, estar recibiendo tratamiento con antituberculosos ",
+					"indicaciones": "Todos los recién nacidos sanos mayores de 2000 g"
+				},
+				{
+					"nombre": "Hepatitis B 1° dosis",
+					"categoria": "Bebe",
+					"edad": "0",
+					"anual": "No",
+					"contraindicaciones": "Fiebre mayor a 38.5 °C, Hipersensibilidad conocida al Timerosal, Alergia a la Levadura",
+					"indicaciones": "Todos los recién nacidos"
+				},
+				{
+					"nombre": "Hepatitis B 2° dosis",
+					"categoria": "Bebe",
+					"edad": "2",
+					"anual": "No",
+					"contraindicaciones": "Fiebre mayor a 38.5 °C, Hipersensibilidad conocida al Timerosal, Alergia a la Levadura",
+					"indicaciones": "Se indica a los 2 meses de edad"
+				},
+				{
+					"nombre": "Hepatitis B 3° dosis",
+					"categoria": "Bebe",
+					"edad": "6",
+					"anual": "No",
+					"contraindicaciones": "Fiebre mayor a 38.5 °C, Hipersensibilidad conocida al Timerosal, Alergia a la Levadura",
+					"indicaciones": "Se indica a los 6 meses de edad"
+				},
+				{
+					"nombre": "Pentavalente Acelular 1° dosis",
+					"categoria": "Bebe",
+					"edad": "2",
+					"anual": "No",
+					"contraindicaciones": "La vacuna está contraindicada en: Inmunodeficiencias (infección por VIH asintomática no es contraindicación), Fiebre mayor a 40°C, Enfermedades que involucren daño cerebral, antecedentes de convulsiones asociadas a la vacuna, transfundidos o que han recibido inmunoglobulina deben esperar 3 meses.",
+					"indicaciones": "Se debe administrar a todos los lactantes de 2, 4 y 6 meses de edad, con un refuerzo a los 18 meses"
+				},
+				{
+					"nombre": "Pentavalente Acelular 2° dosis",
+					"categoria": "Bebe",
+					"edad": "4",
+					"anual": "No",
+					"contraindicaciones": "La vacuna está contraindicada en: Inmunodeficiencias (infección por VIH asintomática no es contraindicación), Fiebre mayor a 40°C, Enfermedades que involucren daño cerebral, antecedentes de convulsiones asociadas a la vacuna, transfundidos o que han recibido inmunoglobulina deben esperar 3 meses.",
+					"indicaciones": "Se debe administrar a todos los lactantes de 2, 4 y 6 meses de edad, con un refuerzo a los 18 meses"
+				},
+				{
+					"nombre": "Pentavalente Acelular 3° dosis",
+					"categoria": "Bebe",
+					"edad": "6",
+					"anual": "No",
+					"contraindicaciones": "La vacuna está contraindicada en: Inmunodeficiencias (infección por VIH asintomática no es contraindicación), Fiebre mayor a 40°C, Enfermedades que involucren daño cerebral, antecedentes de convulsiones asociadas a la vacuna, transfundidos o que han recibido inmunoglobulina deben esperar 3 meses.",
+					"indicaciones": "Se debe administrar a todos los lactantes de 2, 4 y 6 meses de edad, con un refuerzo a los 18 meses"
+				},
+				{
+					"nombre": "Pentavalente Acelular Refuerzo",
+					"categoria": "Bebe",
+					"edad": "18",
+					"anual": "No",
+					"contraindicaciones": "La vacuna está contraindicada en: Inmunodeficiencias (infección por VIH asintomática no es contraindicación), Fiebre mayor a 40°C, Enfermedades que involucren daño cerebral, antecedentes de convulsiones asociadas a la vacuna, transfundidos o que han recibido inmunoglobulina deben esperar 3 meses.",
+					"indicaciones": "Se debe administrar a todos los lactantes de 2, 4 y 6 meses de edad, con un refuerzo a los 18 meses"
+				},
+				{
+					"nombre": "Rotavirus 1° dosis",
+					"categoria": "Bebe",
+					"edad": "2",
+					"anual": "No",
+					"contraindicaciones": "Antecedentes de enfermedad gastrointestinal crónica, incluyendo cualquier malformación congénita no corregida, fiebre mayor de 38.5°C y mayores de 6 meses de edad ",
+					"indicaciones": "Se indica a todos los lactantes de 2, 4 y 6 meses de edad (no mayores de 6)"
+				},
+				{
+					"nombre": "Rotavirus 2° dosis",
+					"categoria": "Bebe",
+					"edad": "4",
+					"anual": "No",
+					"contraindicaciones": "Antecedentes de enfermedad gastrointestinal crónica, incluyendo cualquier malformacion congenita no corregida, fiebre mayor de 38.5°C y mayores de 6 meses de edad ",
+					"indicaciones": "Se indica a todos los lactantes de 2, 4 y 6 meses de edad (no mayores de 6 meses)"
+				},
+				{
+					"nombre": "Rotavirus 3° dosis",
+					"categoria": "Bebe",
+					"edad": "6",
+					"anual": "No",
+					"contraindicaciones": "Antecedentes de enfermedad gastrointestinal crónica, incluyendo cualquier malformacion congenita no corregida, fiebre mayor de 38.5°C y mayores de 6 meses de edad ",
+					"indicaciones": "Se indica a todos los lactantes de 2, 4 y 6 meses de edad (no mayores de 6 meses)"
+				},
+				{
+					"nombre": "Antineumocócica conjugada 13 valente 1° dosis",
+					"categoria": "Bebe",
+					"edad": "2",
+					"anual": "No",
+					"contraindicaciones": "Fiebre mayor a 38.5°C",
+					"indicaciones": "Se debe administrar a todos los lactantes a los 2 y 4 meses de vida, con un refuerzo al año de edad "
+				},
+				{
+					"nombre": "Antineumocócica conjugada 13 valente 2° dosis",
+					"categoria": "Bebe",
+					"edad": "4",
+					"anual": "No",
+					"contraindicaciones": "Fiebre mayor a 38.5°C",
+					"indicaciones": "Se debe administrar a todos los lactantes a los 2 y 4 meses de vida, con un refuerzo al año de edad "
+				},
+				{
+					"nombre": "Antineumocócica conjugada 13 valente Refuerzo",
+					"categoria": "Bebe",
+					"edad": "12",
+					"anual": "No",
+					"contraindicaciones": "Fiebre mayor a 38.5°C",
+					"indicaciones": "Se debe administrar a todos los lactantes a los 2 y 4 meses de vida, con un refuerzo al año de edad."
+				},
+				{
+					"nombre": "Influenza",
+					"categoria": "Bebe",
+					"edad": "6",
+                    "anual": "Si",
+                    "limite": "120",
+					"contraindicaciones": "Menores de 6 meses, Personas con hipersensibilidad o que hayan tenido una reacción anafiláctica al huevo o una dosis previa de la vacuna, Fiebre mayor o igual a 38.5°C, Antecedentes de Síndrome de Guillain Barré",
+					"indicaciones": "A partir de los 6 meses de edad en temporada invernal (preferentemente en octubre) y continuar con esquema anual hasta los 10 años"
+				},
+				{
+					"nombre": "SRP 1° Dosis",
+					"categoria": "Bebe",
+					"edad": "12",
+					"anual": "No",
+					"contraindicaciones": "Antecedentes de reacciones anafilácticas al huevo o a la neomicina, antecedentes de transfusiones sanguíneas o aplicación de gammaglobulina en los últimos 3 meses, personas con inmunodeficiencias incluyendo enfermedades hemato oncológicas u otras neoplasias, personas bajo tratamiento con corticosteroides sistémicos, enfermedades graves neurológicas como hidrocefalia, tumores del sistema nerviosos central o convulsiones sin tratamiento, Tuberculosis sin tratamiento ",
+					"indicaciones": "A todos los lactantes de 1 año de edad y refuerzo a los 6 años."
+				},
+				{
+					"nombre": "SRP Refuerzo",
+					"categoria": "Bebe",
+					"edad": "72",
+					"anual": "No",
+					"contraindicaciones": "Antecedentes de reacciones anafilácticas al huevo o a la neomicina, antecedentes de transfusiones sanguíneas o aplicación de gammaglobulina en los últimos 3 meses, personas con inmunodeficiencias incluyendo enfermedades hemato oncológicas u otras neoplasias, personas bajo tratamiento con corticosteroides sistémicos, enfermedades graves neurológicas como hidrocefalia, tumores del sistema nerviosos central o convulsiones sin tratamiento, Tuberculosis sin tratamiento",
+					"indicaciones": "A todos los lactantes de 1 año de edad y refuerzo a los 6 años."
+				},
+				{
+					"nombre": "DPT",
+					"categoria": "Bebe",
+					"edad": "48",
+					"anual": "No",
+					"contraindicaciones": "Mayores de 5 años, enfermedades graves con o sin fiebre, ",
+					"indicaciones": "Indicada en todos los preescolares de 4 años de edad."
+				},
+				{
+					"nombre": "Sabin",
+					"categoria": "Bebe",
+					"edad": "6",
+					"anual": "Si",
+                    "limite": "60",
+					"contraindicaciones": "Menores de 6 meses, fiebre igual o mayor a 38.5°C, Inmunodeficiencias primarias o cuadro clínico de SIDA, ",
+					"indicaciones": "Se administra en la semana nacional de vacunación en mayores de 6 meses hasta los 5 años, solo despues de 2 dosis de la vacuna pentavalente acelular"
+				},
+				{
+					"nombre": "Hepatitis B 1° dosis",
+					"categoria": "Adolescente",
+					"edad": "132",
+					"anual": "No",
+					"contraindicaciones": "Fiebre mayor a 38.5 °C, Hipersensibilidad conocida al Timerosal, Alergia a la Levadura",
+					"indicaciones": "Se indica en todos los Adolescentes que no hayan recibido vacunación anterior contra Hepatitis B"
+				},
+				{
+					"nombre": "Hepatitis B 2° dosis",
+					"categoria": "Adolescente",
+					"edad": "133",
+					"anual": "No",
+					"contraindicaciones": "Fiebre mayor a 38.5 °C, Hipersensibilidad conocida al Timerosal, Alergia a la Levadura",
+					"indicaciones": "Se indica en todos los Adolescentes que no hayan recibido vacunación anterior contra Hepatitis B, un mes después de la primera dosis"
+				},
+				{
+					"nombre": "Td 1° dosis",
+					"categoria": "Adolescente",
+					"edad": "132",
+					"anual": "No",
+					"contraindicaciones": "Enfermedades graves con o sin fiebre",
+					"indicaciones": "Se indica a todos los adolescentes de 11 años o mayores"
+				},
+				{
+					"nombre": "Td 2° dosis",
+					"categoria": "Adolescente",
+					"edad": "133",
+					"anual": "No",
+					"contraindicaciones": "Enfermedades graves con o sin fiebre",
+					"indicaciones": "Se indica a todos los adolescentes SOLO si no había recibido inmunización contra Difteria, Tosferina y Tétanos anteriormente o no se tiene documentado en la cartilla"
+				},
+				{
+					"nombre": "Td 3° dosis",
+					"categoria": "Adolescente",
+					"edad": "145",
+					"anual": "No",
+					"contraindicaciones": "Enfermedades graves con o sin fiebre",
+					"indicaciones": "Se indica a todos los adolescentes SOLO si no había recibido inmunización contra Difteria, Tosferina y Tétanos anteriormente o no se tiene documentado en la cartilla"
+				},
+				{
+					"nombre": "SR 1° dosis",
+					"categoria": "Adolescente",
+					"edad": "132",
+					"anual": "No",
+					"contraindicaciones": "Antecedentes de reacciones anafilácticas al huevo o a la neomicina, antecedentes de transfusiones sanguíneas o aplicación de gammaglobulina en los últimos 3 meses, personas con inmunodeficiencias incluyendo enfermedades hemato oncológicas u otras neoplasias, personas bajo tratamiento con corticosteroides sistémicos, enfermedades graves neurológicas como hidrocefalia, tumores del sistema nerviosos central o convulsiones sin tratamiento, Tuberculosis sin tratamiento, Embarazo",
+					"indicaciones": "Se indica a todos los Adolescentes que no han sido vacunados o tienen esquema incompleto contra Sarampion y Rubeola"
+				},
+				{
+					"nombre": "SR 2° dosis",
+					"categoria": "Adolescente",
+					"edad": "133",
+					"anual": "No",
+					"contraindicaciones": "Antecedentes de reacciones anafilácticas al huevo o a la neomicina, antecedentes de transfusiones sanguíneas o aplicación de gammaglobulina en los últimos 3 meses, personas con inmunodeficiencias incluyendo enfermedades hemato oncológicas u otras neoplasias, personas bajo tratamiento con corticosteroides sistémicos, enfermedades graves neurológicas como hidrocefalia, tumores del sistema nerviosos central o convulsiones sin tratamiento, Tuberculosis sin tratamiento, Embarazo",
+					"indicaciones": "Se indica SOLO a los Adolescentes que no han sido vacunados contra Sarampión y Rubeola"
+				},
+				{
+					"nombre": "VPH 1° dosis",
+					"categoria": "Adolescentes",
+					"edad": "132",
+					"anual": "No",
+					"contraindicaciones": "Menores de 9 años y mayores de 26 años, mujeres embarazadas deberán esperar a terminar embarazo para iniciar o continuar con el esquema de vacunación contra VPH",
+					"indicaciones": "Se indica en todas las mujeres con un rango de edad entre 9 y 26 años, siendo mas efectiva la vacunación a los 11-12 años de edad"
+				},
+				{
+					"nombre": "VPH 2° dosis",
+					"categoria": "Adolescentes",
+					"edad": "134",
+					"anual": "No",
+					"contraindicaciones": "Menores de 9 años y mayores de 26 años, mujeres embarazadas deberán esperar a terminar embarazo para iniciar o continuar con el esquema de vacunación contra VPH",
+					"indicaciones": "Se indica en todas las mujeres con un rango de edad entre 9 y 26 años, siendo mas efectiva la vacunación a los 11-12 años de edad"
+				},
+				{
+					"nombre": "VPH 3° dosis",
+					"categoria": "Adolescentes",
+					"edad": "138",
+					"anual": "No",
+					"contraindicaciones": "Menores de 9 años y mayores de 26 años, mujeres embarazadas deberán esperar a terminar embarazo para iniciar o continuar con el esquema de vacunación contra VPH",
+					"indicaciones": "Se indica en todas las mujeres con un rango de edad entre 9 y 26 años, siendo más efectiva la vacunación a los 11-12 años de edad"
+				},
+				{
+					"nombre": "Hepatitis B",
+					"categoria": "Embarazada",
+					"edad": "6",
+					"anual": "No",
+					"contraindicaciones": "Fiebre mayor a 38.5 °C, Hipersensibilidad conocida al Timerosal, Alergia a la Levadura",
+					"indicaciones": "Se indica en las embarazadas SOLO en presencia de los siguientes factores de riesgo: Tener más de una pareja sexual durante los últimos 6 meses, Haber sido evaluada o tratada por alguna enfermedad de transmision central, uso de drogas inyectables reciente o actual, o que haya tenido pareja sexual con HBsAG(Antígeno de superficie de Hepatitis B) positivo."
+				},
+				{
+					"nombre": "Tdpa",
+					"categoria": "Embarazada",
+					"edad": "6",
+					"anual": "No",
+					"contraindicaciones": "No se han demostrado efectos adversos en el embarazo con la aplicación de la vacuna después de las 20 semanas de gestación.",
+					"indicaciones": "La vacuna debe administrarse durante el embarazo después de las 20 semanas de gestación, de preferencia durante el tercer trimestre o el final del segundo."
+				},
+				{
+					"nombre": "Influenza",
+					"categoria": "Embarazada",
+					"edad": "6",
+					"anual": "No",
+					"contraindicaciones": " Personas con hipersensibilidad o que hayan tenido una reacción anafiláctica al huevo o una dosis previa de la vacuna, Fiebre mayor o igual a 38.5°C, Antecedentes de Síndrome de Guillain Barré.",
+					"indicaciones": "La vacuna inyectable contra la influenza es segura durante cualquier etapa del embarazo, posparto y lactancia. Se indica en todas las embarazadas ya que se considera un grupo de riesgo, de preferencia en el tercer trimestre o el final del segundo"
+				},
+				{
+					"nombre": "Influenza",
+					"categoria": "Adulto",
+					"edad": "600",
+					"anual": "Si",
+					"contraindicaciones": "Personas con hipersensibilidad o que hayan tenido una reacción anafiláctica al huevo o una dosis previa de la vacuna, Fiebre mayor o igual a 38.5°C, Antecedentes de Síndrome de Guillain Barré.",
+					"indicaciones": "Se recomienda vacunar a los adultos con factores de riesgo para influenza: Personas mayores de 50 años, Personas con enfermedad pulmonar crónica (incluido asma bronquial), Personas con enfermedad cardiaca crónica (excepto Hipertensión arterial), Personas con enfermedades crónicas hepáticas, renales y metabólicas (diabetes mellitus), Personas con desordenes cognitivos o neuromusculares, Personas que vivan en casas de cuidados.   Se recomienda vacunar en el mes de octubre y Noviembre."
+				},
+				{
+					"nombre": "Antineumocócica 23-valente",
+					"categoria": "Adulto",
+					"edad": "228",
+					"anual": "Si",
+					"contraindicaciones": "@Fiebre mayor a 38.5°C @Personas con hipersensibilidad conocida a algún componente de la vacuna @ Mayores de 65 que recibieron una dosis de la vacuna en los últimos 5 años @ Durante el primer trimestre del embarazo.",
+					"indicaciones": "Se recomienda la vacunación en adultos mayores de 19 años de las siguientes características: \n o   Enfermedad pulmonar crónica (incluyendo asma) \n o   Personas con enfermedad cardiaca crónica (excepto Hipertensión) \n o   Pacientes con enfermedades crónicas hepáticas, renales y metabólicas (diabetes mellitus) \n o   Personas con inmunodeficiencias (VIH) \n o   Personas con desordenes cognitivos y desórdenes neuromusculares que tengan más factores de riesgo para contraer una infección. \n o   Personas que fuman, con alcoholismo, con algún tipo de pérdidas de líquido cefalorraquídeo, enfermedad de células falciformes y personas con implantes cocleares. \n o   Personas con tumores malignos o que reciben quimioterapia (incluidos glucocorticoides), asplenia, síndrome nefrótico. \n o   Mayores de 65 \n o   Personas que viven en casas de cuidados."
+				}
+			]
+		}
+	]
+}

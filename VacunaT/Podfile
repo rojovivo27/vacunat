@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'VacunaT' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for VacunaT
+	pod 'Google-Mobile-Ads-SDK'
+	pod 'paper-onboarding'
+	pod 'SwiftyJSON'
+
+  target 'VacunaTTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'VacunaTUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

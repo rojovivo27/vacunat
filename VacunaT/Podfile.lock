@@ -1,0 +1,18 @@
+PODS:
+  - Google-Mobile-Ads-SDK (7.27.0)
+  - paper-onboarding (3.0.1)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Google-Mobile-Ads-SDK
+  - paper-onboarding
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: 83f7f890e638ce8f1debd440ea363338c9f6be3b
+  paper-onboarding: 0aa1746d820fcf44371d41ee521aa3d8e5679263
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 24bb73c7f5ae668c5720fdfd724da54537a087ae
+
+COCOAPODS: 1.3.1

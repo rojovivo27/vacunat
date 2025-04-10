@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35A2DE20B004BF6F564AC1DD /* Pods_VacunaTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A70933D1C09041081F71EF /* Pods_VacunaTTests.framework */; };
+		43B6344B3E678A1F58FE705B /* Pods_Vacuna_TTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D30C67AD8C988B63980991 /* Pods_Vacuna_TTests.framework */; };
+		58F5B4883F4AD55E7BC811FD /* Pods_VacunaTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E778CB2125A5F922C9E9C061 /* Pods_VacunaTUITests.framework */; };
+		6A08A5AD1FAEA2CF0080E4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08A5AC1FAEA2CF0080E4D9 /* AppDelegate.swift */; };
+		6A08A5AF1FAEA2CF0080E4D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08A5AE1FAEA2CF0080E4D9 /* ViewController.swift */; };
+		6A08A5B21FAEA2CF0080E4D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A08A5B01FAEA2CF0080E4D9 /* Main.storyboard */; };
+		6A08A5B41FAEA2CF0080E4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A08A5B31FAEA2CF0080E4D9 /* Assets.xcassets */; };
+		6A08A5B71FAEA2CF0080E4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A08A5B51FAEA2CF0080E4D9 /* LaunchScreen.storyboard */; };
+		6A08A5C21FAEA2CF0080E4D9 /* VacunaTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08A5C11FAEA2CF0080E4D9 /* VacunaTTests.swift */; };
+		6A08A5CD1FAEA2CF0080E4D9 /* VacunaTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08A5CC1FAEA2CF0080E4D9 /* VacunaTUITests.swift */; };
+		6A08A5DB1FAEB8E40080E4D9 /* VaccinateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08A5DA1FAEB8E40080E4D9 /* VaccinateListViewController.swift */; };
+		6A08A5DD1FAEC1480080E4D9 /* VaccinateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08A5DC1FAEC1480080E4D9 /* VaccinateDetailViewController.swift */; };
+		6A35E2842015047000911A14 /* AlertDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A35E2832015047000911A14 /* AlertDetailsViewController.swift */; };
+		6A490EC920211044008C6FA0 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A490EC820211044008C6FA0 /* InfoViewController.swift */; };
+		6A64B5BA20082B5E00819025 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A64B5B920082B5D00819025 /* ProfileViewController.swift */; };
+		6A64B5BD20082D3000819025 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A64B5BB20082D2F00819025 /* SQLiteDB.swift */; };
+		6A64B5BE20082D3000819025 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A64B5BC20082D2F00819025 /* SQLTable.swift */; };
+		6A64B5C020082D7100819025 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A64B5BF20082D7000819025 /* libsqlite3.tbd */; };
+		6A64B5C220082DB900819025 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A64B5C120082DB900819025 /* Utilities.swift */; };
+		6A64B5C720083AAD00819025 /* ProfileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A64B5C620083AAD00819025 /* ProfileDetailsViewController.swift */; };
+		6A64B5CE200EBCB100819025 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A64B5CD200EBCB100819025 /* libsqlite3.0.tbd */; };
+		6A64B5D0200F0CB200819025 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A64B5CF200F0CB200819025 /* OnboardingViewController.swift */; };
+		6A64B5D2200F1DC600819025 /* CartillaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A64B5D1200F1DC600819025 /* CartillaViewController.swift */; };
+		6A64B5D4200F263300819025 /* CartillaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A64B5D3200F263300819025 /* CartillaDetailsViewController.swift */; };
+		6A64B5D6200FCDE000819025 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A64B5D5200FCDE000819025 /* AlertsViewController.swift */; };
+		6A64B5D8200FFE2F00819025 /* vaccines.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A64B5D7200FFE2E00819025 /* vaccines.json */; };
+		7676044F0FF4B2C1853C99BC /* Pods_VacunaT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24764766A2E6D3A99EBD7C74 /* Pods_VacunaT.framework */; };
+		E07B72CBD2BE9F84CCC3693D /* Pods_Vacuna_TUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FAD8ED15298B3F336EDB49 /* Pods_Vacuna_TUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A08A5BE1FAEA2CF0080E4D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A08A5A11FAEA2CF0080E4D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A08A5A81FAEA2CF0080E4D9;
+			remoteInfo = "Vacuna-T";
+		};
+		6A08A5C91FAEA2CF0080E4D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A08A5A11FAEA2CF0080E4D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A08A5A81FAEA2CF0080E4D9;
+			remoteInfo = "Vacuna-T";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08A70933D1C09041081F71EF /* Pods_VacunaTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VacunaTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D063F40085121F8A1D5E6FE /* Pods-Vacuna-T.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacuna-T.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vacuna-T/Pods-Vacuna-T.debug.xcconfig"; sourceTree = "<group>"; };
+		24764766A2E6D3A99EBD7C74 /* Pods_VacunaT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VacunaT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DAE34DA321E52D9ED59E94 /* Pods-Vacuna-TTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacuna-TTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vacuna-TTests/Pods-Vacuna-TTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EA8A3F7CEDF424A2FE1CE6D /* Pods-VacunaTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacunaTUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VacunaTUITests/Pods-VacunaTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		59D30C67AD8C988B63980991 /* Pods_Vacuna_TTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacuna_TTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A08A5A91FAEA2CF0080E4D9 /* VacunaT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VacunaT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A08A5AC1FAEA2CF0080E4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A08A5AE1FAEA2CF0080E4D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A08A5B11FAEA2CF0080E4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A08A5B31FAEA2CF0080E4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A08A5B61FAEA2CF0080E4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A08A5B81FAEA2CF0080E4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A08A5BD1FAEA2CF0080E4D9 /* VacunaTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacunaTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A08A5C11FAEA2CF0080E4D9 /* VacunaTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacunaTTests.swift; sourceTree = "<group>"; };
+		6A08A5C31FAEA2CF0080E4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A08A5C81FAEA2CF0080E4D9 /* VacunaTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacunaTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A08A5CC1FAEA2CF0080E4D9 /* VacunaTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacunaTUITests.swift; sourceTree = "<group>"; };
+		6A08A5CE1FAEA2CF0080E4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A08A5DA1FAEB8E40080E4D9 /* VaccinateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinateListViewController.swift; sourceTree = "<group>"; };
+		6A08A5DC1FAEC1480080E4D9 /* VaccinateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinateDetailViewController.swift; sourceTree = "<group>"; };
+		6A35E2832015047000911A14 /* AlertDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDetailsViewController.swift; sourceTree = "<group>"; };
+		6A490EC820211044008C6FA0 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		6A64B5B920082B5D00819025 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6A64B5BB20082D2F00819025 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		6A64B5BC20082D2F00819025 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		6A64B5BF20082D7000819025 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6A64B5C120082DB900819025 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6A64B5C620083AAD00819025 /* ProfileDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsViewController.swift; sourceTree = "<group>"; };
+		6A64B5CC200965BF00819025 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		6A64B5CD200EBCB100819025 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		6A64B5CF200F0CB200819025 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		6A64B5D1200F1DC600819025 /* CartillaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartillaViewController.swift; sourceTree = "<group>"; };
+		6A64B5D3200F263300819025 /* CartillaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartillaDetailsViewController.swift; sourceTree = "<group>"; };
+		6A64B5D5200FCDE000819025 /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
+		6A64B5D7200FFE2E00819025 /* vaccines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = vaccines.json; path = resources/vaccines.json; sourceTree = SOURCE_ROOT; };
+		76DEA51B8A8F95E95E1D448C /* Pods-VacunaT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacunaT.release.xcconfig"; path = "Pods/Target Support Files/Pods-VacunaT/Pods-VacunaT.release.xcconfig"; sourceTree = "<group>"; };
+		A6FAD8ED15298B3F336EDB49 /* Pods_Vacuna_TUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacuna_TUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B1D90237DF4690FD6039C8 /* Pods-VacunaTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacunaTTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VacunaTTests/Pods-VacunaTTests.release.xcconfig"; sourceTree = "<group>"; };
+		B73C90648B481772C6CB3650 /* Pods-Vacuna-TUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacuna-TUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vacuna-TUITests/Pods-Vacuna-TUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C3FE3D9AEDA119BBDADB4A85 /* Pods-Vacuna-TUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacuna-TUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vacuna-TUITests/Pods-Vacuna-TUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF50D74CD8B92B8847752A8E /* Pods-VacunaTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacunaTUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VacunaTUITests/Pods-VacunaTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D40C7B88338E27B03A51D6D3 /* Pods-VacunaT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacunaT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VacunaT/Pods-VacunaT.debug.xcconfig"; sourceTree = "<group>"; };
+		DAE8420C52AE1290325FD80A /* Pods-Vacuna-TTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacuna-TTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vacuna-TTests/Pods-Vacuna-TTests.release.xcconfig"; sourceTree = "<group>"; };
+		E374EB2EF6C16ABD4AA9C912 /* Pods-Vacuna-T.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacuna-T.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vacuna-T/Pods-Vacuna-T.release.xcconfig"; sourceTree = "<group>"; };
+		E4A772F5FED57C9BE2D585AC /* Pods_Vacuna_T.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacuna_T.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E778CB2125A5F922C9E9C061 /* Pods_VacunaTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VacunaTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F617F85F544243A6F78BBB8C /* Pods-VacunaTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacunaTTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VacunaTTests/Pods-VacunaTTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A08A5A61FAEA2CF0080E4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A64B5CE200EBCB100819025 /* libsqlite3.0.tbd in Frameworks */,
+				6A64B5C020082D7100819025 /* libsqlite3.tbd in Frameworks */,
+				7676044F0FF4B2C1853C99BC /* Pods_VacunaT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A08A5BA1FAEA2CF0080E4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B6344B3E678A1F58FE705B /* Pods_Vacuna_TTests.framework in Frameworks */,
+				35A2DE20B004BF6F564AC1DD /* Pods_VacunaTTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A08A5C51FAEA2CF0080E4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07B72CBD2BE9F84CCC3693D /* Pods_Vacuna_TUITests.framework in Frameworks */,
+				58F5B4883F4AD55E7BC811FD /* Pods_VacunaTUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A08A5A01FAEA2CF0080E4D9 = {
+			isa = PBXGroup;
+			children = (
+				6A08A5AB1FAEA2CF0080E4D9 /* VacunaT */,
+				6A08A5C01FAEA2CF0080E4D9 /* VacunaTTests */,
+				6A08A5CB1FAEA2CF0080E4D9 /* VacunaTUITests */,
+				6A08A5AA1FAEA2CF0080E4D9 /* Products */,
+				CA14802FB95DC432B91B3D41 /* Pods */,
+				85E41698013D467373C2B4AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6A08A5AA1FAEA2CF0080E4D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A08A5A91FAEA2CF0080E4D9 /* VacunaT.app */,
+				6A08A5BD1FAEA2CF0080E4D9 /* VacunaTTests.xctest */,
+				6A08A5C81FAEA2CF0080E4D9 /* VacunaTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A08A5AB1FAEA2CF0080E4D9 /* VacunaT */ = {
+			isa = PBXGroup;
+			children = (
+				6A64B5D7200FFE2E00819025 /* vaccines.json */,
+				6A64B5BB20082D2F00819025 /* SQLiteDB.swift */,
+				6A64B5BC20082D2F00819025 /* SQLTable.swift */,
+				6A08A5AC1FAEA2CF0080E4D9 /* AppDelegate.swift */,
+				6A64B5CF200F0CB200819025 /* OnboardingViewController.swift */,
+				6A08A5AE1FAEA2CF0080E4D9 /* ViewController.swift */,
+				6A08A5DA1FAEB8E40080E4D9 /* VaccinateListViewController.swift */,
+				6A08A5DC1FAEC1480080E4D9 /* VaccinateDetailViewController.swift */,
+				6A64B5B920082B5D00819025 /* ProfileViewController.swift */,
+				6A64B5C620083AAD00819025 /* ProfileDetailsViewController.swift */,
+				6A64B5D1200F1DC600819025 /* CartillaViewController.swift */,
+				6A64B5D3200F263300819025 /* CartillaDetailsViewController.swift */,
+				6A64B5D5200FCDE000819025 /* AlertsViewController.swift */,
+				6A35E2832015047000911A14 /* AlertDetailsViewController.swift */,
+				6A490EC820211044008C6FA0 /* InfoViewController.swift */,
+				6A08A5B01FAEA2CF0080E4D9 /* Main.storyboard */,
+				6A08A5B31FAEA2CF0080E4D9 /* Assets.xcassets */,
+				6A08A5B51FAEA2CF0080E4D9 /* LaunchScreen.storyboard */,
+				6A08A5B81FAEA2CF0080E4D9 /* Info.plist */,
+				6A64B5C120082DB900819025 /* Utilities.swift */,
+				6A64B5CC200965BF00819025 /* BridgingHeader.h */,
+			);
+			path = VacunaT;
+			sourceTree = "<group>";
+		};
+		6A08A5C01FAEA2CF0080E4D9 /* VacunaTTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A08A5C11FAEA2CF0080E4D9 /* VacunaTTests.swift */,
+				6A08A5C31FAEA2CF0080E4D9 /* Info.plist */,
+			);
+			path = VacunaTTests;
+			sourceTree = "<group>";
+		};
+		6A08A5CB1FAEA2CF0080E4D9 /* VacunaTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A08A5CC1FAEA2CF0080E4D9 /* VacunaTUITests.swift */,
+				6A08A5CE1FAEA2CF0080E4D9 /* Info.plist */,
+			);
+			path = VacunaTUITests;
+			sourceTree = "<group>";
+		};
+		85E41698013D467373C2B4AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A64B5CD200EBCB100819025 /* libsqlite3.0.tbd */,
+				6A64B5BF20082D7000819025 /* libsqlite3.tbd */,
+				E4A772F5FED57C9BE2D585AC /* Pods_Vacuna_T.framework */,
+				59D30C67AD8C988B63980991 /* Pods_Vacuna_TTests.framework */,
+				A6FAD8ED15298B3F336EDB49 /* Pods_Vacuna_TUITests.framework */,
+				24764766A2E6D3A99EBD7C74 /* Pods_VacunaT.framework */,
+				08A70933D1C09041081F71EF /* Pods_VacunaTTests.framework */,
+				E778CB2125A5F922C9E9C061 /* Pods_VacunaTUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA14802FB95DC432B91B3D41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D063F40085121F8A1D5E6FE /* Pods-Vacuna-T.debug.xcconfig */,
+				E374EB2EF6C16ABD4AA9C912 /* Pods-Vacuna-T.release.xcconfig */,
+				35DAE34DA321E52D9ED59E94 /* Pods-Vacuna-TTests.debug.xcconfig */,
+				DAE8420C52AE1290325FD80A /* Pods-Vacuna-TTests.release.xcconfig */,
+				C3FE3D9AEDA119BBDADB4A85 /* Pods-Vacuna-TUITests.debug.xcconfig */,
+				B73C90648B481772C6CB3650 /* Pods-Vacuna-TUITests.release.xcconfig */,
+				D40C7B88338E27B03A51D6D3 /* Pods-VacunaT.debug.xcconfig */,
+				76DEA51B8A8F95E95E1D448C /* Pods-VacunaT.release.xcconfig */,
+				F617F85F544243A6F78BBB8C /* Pods-VacunaTTests.debug.xcconfig */,
+				B0B1D90237DF4690FD6039C8 /* Pods-VacunaTTests.release.xcconfig */,
+				4EA8A3F7CEDF424A2FE1CE6D /* Pods-VacunaTUITests.debug.xcconfig */,
+				CF50D74CD8B92B8847752A8E /* Pods-VacunaTUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A08A5A81FAEA2CF0080E4D9 /* VacunaT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A08A5D11FAEA2CF0080E4D9 /* Build configuration list for PBXNativeTarget "VacunaT" */;
+			buildPhases = (
+				D9EBFCD9AF4D0E1B7BE8A235 /* [CP] Check Pods Manifest.lock */,
+				6A08A5A51FAEA2CF0080E4D9 /* Sources */,
+				6A08A5A61FAEA2CF0080E4D9 /* Frameworks */,
+				6A08A5A71FAEA2CF0080E4D9 /* Resources */,
+				D6EB7300755002388AF399D2 /* [CP] Embed Pods Frameworks */,
+				8AD5CF5BFA11E780DC4F883D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VacunaT;
+			productName = "Vacuna-T";
+			productReference = 6A08A5A91FAEA2CF0080E4D9 /* VacunaT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A08A5BC1FAEA2CF0080E4D9 /* VacunaTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A08A5D41FAEA2CF0080E4D9 /* Build configuration list for PBXNativeTarget "VacunaTTests" */;
+			buildPhases = (
+				CBA8AC8DAAA1B80F467E5EDE /* [CP] Check Pods Manifest.lock */,
+				6A08A5B91FAEA2CF0080E4D9 /* Sources */,
+				6A08A5BA1FAEA2CF0080E4D9 /* Frameworks */,
+				6A08A5BB1FAEA2CF0080E4D9 /* Resources */,
+				77E19DB35E8DD45A10909C34 /* [CP] Embed Pods Frameworks */,
+				68E31B1C5F56AD3D4C8D5D95 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A08A5BF1FAEA2CF0080E4D9 /* PBXTargetDependency */,
+			);
+			name = VacunaTTests;
+			productName = "Vacuna-TTests";
+			productReference = 6A08A5BD1FAEA2CF0080E4D9 /* VacunaTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A08A5C71FAEA2CF0080E4D9 /* VacunaTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A08A5D71FAEA2CF0080E4D9 /* Build configuration list for PBXNativeTarget "VacunaTUITests" */;
+			buildPhases = (
+				B22FEEB4289110A1075AD004 /* [CP] Check Pods Manifest.lock */,
+				6A08A5C41FAEA2CF0080E4D9 /* Sources */,
+				6A08A5C51FAEA2CF0080E4D9 /* Frameworks */,
+				6A08A5C61FAEA2CF0080E4D9 /* Resources */,
+				34F88D6310F7185A6620DA37 /* [CP] Embed Pods Frameworks */,
+				A406B8EDE64D9ECC60414567 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A08A5CA1FAEA2CF0080E4D9 /* PBXTargetDependency */,
+			);
+			name = VacunaTUITests;
+			productName = "Vacuna-TUITests";
+			productReference = 6A08A5C81FAEA2CF0080E4D9 /* VacunaTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A08A5A11FAEA2CF0080E4D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Aldo;
+				TargetAttributes = {
+					6A08A5A81FAEA2CF0080E4D9 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					6A08A5BC1FAEA2CF0080E4D9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6A08A5A81FAEA2CF0080E4D9;
+					};
+					6A08A5C71FAEA2CF0080E4D9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6A08A5A81FAEA2CF0080E4D9;
+					};
+				};
+			};
+			buildConfigurationList = 6A08A5A41FAEA2CF0080E4D9 /* Build configuration list for PBXProject "VacunaT" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A08A5A01FAEA2CF0080E4D9;
+			productRefGroup = 6A08A5AA1FAEA2CF0080E4D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A08A5A81FAEA2CF0080E4D9 /* VacunaT */,
+				6A08A5BC1FAEA2CF0080E4D9 /* VacunaTTests */,
+				6A08A5C71FAEA2CF0080E4D9 /* VacunaTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A08A5A71FAEA2CF0080E4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A08A5B71FAEA2CF0080E4D9 /* LaunchScreen.storyboard in Resources */,
+				6A64B5D8200FFE2F00819025 /* vaccines.json in Resources */,
+				6A08A5B41FAEA2CF0080E4D9 /* Assets.xcassets in Resources */,
+				6A08A5B21FAEA2CF0080E4D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A08A5BB1FAEA2CF0080E4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A08A5C61FAEA2CF0080E4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34F88D6310F7185A6620DA37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VacunaTUITests/Pods-VacunaTUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68E31B1C5F56AD3D4C8D5D95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VacunaTTests/Pods-VacunaTTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77E19DB35E8DD45A10909C34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VacunaTTests/Pods-VacunaTTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD5CF5BFA11E780DC4F883D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VacunaT/Pods-VacunaT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A406B8EDE64D9ECC60414567 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VacunaTUITests/Pods-VacunaTUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B22FEEB4289110A1075AD004 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VacunaTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA8AC8DAAA1B80F467E5EDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VacunaTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6EB7300755002388AF399D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VacunaT/Pods-VacunaT-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VacunaT/Pods-VacunaT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9EBFCD9AF4D0E1B7BE8A235 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VacunaT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A08A5A51FAEA2CF0080E4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A08A5AF1FAEA2CF0080E4D9 /* ViewController.swift in Sources */,
+				6A64B5BE20082D3000819025 /* SQLTable.swift in Sources */,
+				6A35E2842015047000911A14 /* AlertDetailsViewController.swift in Sources */,
+				6A08A5AD1FAEA2CF0080E4D9 /* AppDelegate.swift in Sources */,
+				6A490EC920211044008C6FA0 /* InfoViewController.swift in Sources */,
+				6A64B5BA20082B5E00819025 /* ProfileViewController.swift in Sources */,
+				6A64B5BD20082D3000819025 /* SQLiteDB.swift in Sources */,
+				6A08A5DD1FAEC1480080E4D9 /* VaccinateDetailViewController.swift in Sources */,
+				6A64B5D2200F1DC600819025 /* CartillaViewController.swift in Sources */,
+				6A64B5C220082DB900819025 /* Utilities.swift in Sources */,
+				6A64B5D0200F0CB200819025 /* OnboardingViewController.swift in Sources */,
+				6A08A5DB1FAEB8E40080E4D9 /* VaccinateListViewController.swift in Sources */,
+				6A64B5C720083AAD00819025 /* ProfileDetailsViewController.swift in Sources */,
+				6A64B5D6200FCDE000819025 /* AlertsViewController.swift in Sources */,
+				6A64B5D4200F263300819025 /* CartillaDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A08A5B91FAEA2CF0080E4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A08A5C21FAEA2CF0080E4D9 /* VacunaTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A08A5C41FAEA2CF0080E4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A08A5CD1FAEA2CF0080E4D9 /* VacunaTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A08A5BF1FAEA2CF0080E4D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A08A5A81FAEA2CF0080E4D9 /* VacunaT */;
+			targetProxy = 6A08A5BE1FAEA2CF0080E4D9 /* PBXContainerItemProxy */;
+		};
+		6A08A5CA1FAEA2CF0080E4D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A08A5A81FAEA2CF0080E4D9 /* VacunaT */;
+			targetProxy = 6A08A5C91FAEA2CF0080E4D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A08A5B01FAEA2CF0080E4D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A08A5B11FAEA2CF0080E4D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A08A5B51FAEA2CF0080E4D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A08A5B61FAEA2CF0080E4D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A08A5CF1FAEA2CF0080E4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A08A5D01FAEA2CF0080E4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A08A5D21FAEA2CF0080E4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40C7B88338E27B03A51D6D3 /* Pods-VacunaT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCL98AP6MS;
+				INFOPLIST_FILE = "$(SRCROOT)/VacunaT/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldoroldan.redlab.VacunaT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = VacunaT/BridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6A08A5D31FAEA2CF0080E4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76DEA51B8A8F95E95E1D448C /* Pods-VacunaT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCL98AP6MS;
+				INFOPLIST_FILE = "$(SRCROOT)/VacunaT/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldoroldan.redlab.VacunaT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = VacunaT/BridgingHeader.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6A08A5D51FAEA2CF0080E4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F617F85F544243A6F78BBB8C /* Pods-VacunaTTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCL98AP6MS;
+				INFOPLIST_FILE = "Vacuna-TTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aldoroldan.redlab.Vacuna-TTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VacunaT.app/VacunaT";
+			};
+			name = Debug;
+		};
+		6A08A5D61FAEA2CF0080E4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B1D90237DF4690FD6039C8 /* Pods-VacunaTTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCL98AP6MS;
+				INFOPLIST_FILE = "Vacuna-TTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aldoroldan.redlab.Vacuna-TTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VacunaT.app/VacunaT";
+			};
+			name = Release;
+		};
+		6A08A5D81FAEA2CF0080E4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EA8A3F7CEDF424A2FE1CE6D /* Pods-VacunaTUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCL98AP6MS;
+				INFOPLIST_FILE = "Vacuna-TUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aldoroldan.redlab.Vacuna-TUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vacuna-T";
+			};
+			name = Debug;
+		};
+		6A08A5D91FAEA2CF0080E4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF50D74CD8B92B8847752A8E /* Pods-VacunaTUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCL98AP6MS;
+				INFOPLIST_FILE = "Vacuna-TUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aldoroldan.redlab.Vacuna-TUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vacuna-T";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A08A5A41FAEA2CF0080E4D9 /* Build configuration list for PBXProject "VacunaT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A08A5CF1FAEA2CF0080E4D9 /* Debug */,
+				6A08A5D01FAEA2CF0080E4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A08A5D11FAEA2CF0080E4D9 /* Build configuration list for PBXNativeTarget "VacunaT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A08A5D21FAEA2CF0080E4D9 /* Debug */,
+				6A08A5D31FAEA2CF0080E4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A08A5D41FAEA2CF0080E4D9 /* Build configuration list for PBXNativeTarget "VacunaTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A08A5D51FAEA2CF0080E4D9 /* Debug */,
+				6A08A5D61FAEA2CF0080E4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A08A5D71FAEA2CF0080E4D9 /* Build configuration list for PBXNativeTarget "VacunaTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A08A5D81FAEA2CF0080E4D9 /* Debug */,
+				6A08A5D91FAEA2CF0080E4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A08A5A11FAEA2CF0080E4D9 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_VacunaT {
+  umbrella header "Pods-VacunaT-umbrella.h"
+
+  export *
+  module * { export * }
+}
