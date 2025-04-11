@@ -17,7 +17,7 @@ struct HomeView: View {
                             
                         } label: {
                             Image(systemName: "figure.fall")
-                                .font(.system(size: 100))
+                                .font(.system(size: 160))
                         }
                         .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.3)
                         .background(.blue)
@@ -28,7 +28,7 @@ struct HomeView: View {
                             
                         } label: {
                             Image(systemName: "figure.archery")
-                                .font(.system(size: 100))
+                                .font(.system(size: 160))
                         }
                         .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.3)
                         .background(.blue)
@@ -43,7 +43,7 @@ struct HomeView: View {
                             
                         } label: {
                             Image(systemName: "figure.2")
-                                .font(.system(size: 100))
+                                .font(.system(size: 160))
                         }
                         .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.3)
                         .background(.blue)
@@ -55,7 +55,7 @@ struct HomeView: View {
                             
                         } label: {
                             Image(systemName: "figure.child")
-                                .font(.system(size: 100))
+                                .font(.system(size: 160))
                         }
                         .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.height * 0.3)
                         .background(.blue)
