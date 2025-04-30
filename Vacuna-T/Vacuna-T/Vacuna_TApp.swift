@@ -11,7 +11,7 @@ import SwiftUI
 struct Vacuna_TApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppTabView()
         }
     }
 }
