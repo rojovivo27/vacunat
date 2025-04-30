@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var vm = HomeViewModel()
     
-    @State var loading: Bool = false
+    @State var loading: Bool = true
     @State var showVaccines: Bool = false
     @State var title: String = ""
     @State var vaccines: [InfoVaccine] = []
@@ -56,14 +56,14 @@ struct HomeView: View {
                 }
             }
             
-            if !loading {
+            if loading {
                 ProgressView()
             }
         }
         .onAppear {
             Task {
                 await vm.loadInfo()
-                loading.toggle()
+                loading = false
             }
         }
     }

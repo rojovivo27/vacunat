@@ -30,7 +30,7 @@ struct AppTabView: View {
                     Image(systemName: "bell.fill")
                     Text("Notificaciones")
                 }
-            Text("Info")
+            InfoView()
                 .tabItem {
                     Image(systemName: "info.bubble.fill")
                     Text("Info")

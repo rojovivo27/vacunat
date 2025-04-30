@@ -15,10 +15,6 @@ struct VaccineInfo: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text(vaccine.nombre)
-                    .font(.system(size: 24))
-                    .fontWeight(.semibold)
-                    .padding(.bottom, 32)
                 VStack(alignment: .leading) {
                     HStack {
                         Text("Aplicar en: ")
@@ -42,25 +38,27 @@ struct VaccineInfo: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .overlay(alignment: .topTrailing) {
-            Image("logo")
-                .resizable()
-                .clipShape(.rect(cornerRadius: 8))
-                .frame(width: 48, height: 48)
-                .padding()
-        }
         .padding()
         .onAppear {
             let lines = vaccine.descripcion.split(whereSeparator: \.isNewline)
             texts = lines.map { String($0) }
         }
-        .navigationTitle("Detalle")
+        .navigationTitle(vaccine.nombre)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(.rect(cornerRadius: 4))
+                    .frame(width: 40, height: 40)
+            }
+        }
 
     }
 }
 
 #Preview {
     VaccineInfo(
-        vaccine: .init(nombre: "Rabia", descripcion: "¿Pregunta?\nRespuesta\n¿Pregunta?\nRespuesta más larga para ver que pasa con los límites laterales", edad: "0 años", categorias: "Rojos")
+        vaccine: .init(nombre: "Rabia con un Título muy largo", descripcion: "¿Pregunta?\nRespuesta\n¿Pregunta?\nRespuesta más larga para ver que pasa con los límites laterales", edad: "0 años", categorias: "Rojos")
     )
 }
