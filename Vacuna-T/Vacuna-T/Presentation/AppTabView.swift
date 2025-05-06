@@ -15,12 +15,12 @@ struct AppTabView: View {
                     Image(systemName: "house")
                     Text("Inicio")
                 }
-            Text("Perfil")
+            ProfileView()
                 .tabItem {
                     Image(systemName: "person.2.fill")
                     Text("Perfil")
                 }
-            Text("Cartilla")
+            CategoriesView()
                 .tabItem {
                     Image(systemName: "list.clipboard.fill")
                     Text("Cartilla")
