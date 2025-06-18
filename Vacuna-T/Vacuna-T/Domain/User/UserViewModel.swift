@@ -31,8 +31,8 @@ class UserViewModel: ObservableObject {
         let months = components.month ?? 0
     
         for vaccine in vm.expert {
-            if vaccine.categoria == "Embarazada" && user.isPregnant {
-                if vaccine.edad >= user.pregnancyMonths ?? 9 {
+            if vaccine.categoria == "Embarazada" {
+                if user.isPregnant && vaccine.edad >= user.pregnancyMonths ?? 9 {
                     let toDateMonths = vaccine.edad - (user.pregnancyMonths ?? 9)
                     let toDate = calendar.date(byAdding: .month, value: toDateMonths, to: Date.now)
                     vaccines.append(.init(toDate: toDate ?? Date(), vaccine: vaccine))
@@ -50,6 +50,7 @@ class UserViewModel: ObservableObject {
             }
         }
         self.vaccines[user.id.uuidString] = vaccines.sorted { $0.toDate < $1.toDate }
+        print(vaccines.count)
     }
     
     func deleteUser(id: UUID) {
