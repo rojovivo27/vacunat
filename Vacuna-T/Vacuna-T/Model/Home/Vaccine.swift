@@ -33,7 +33,9 @@ struct VaccineRoot: Decodable {
     let vacunas: VaccineContainer
 }
 
-struct CalculatedVaccination: Codable {
+struct CalculatedVaccination: Codable, Identifiable {
+    let id: UUID
     let toDate: Date
     let vaccine: ExpertVaccine
+    var appliedOn: Date?
 }

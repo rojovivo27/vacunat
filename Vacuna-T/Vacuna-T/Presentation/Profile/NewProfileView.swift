@@ -72,16 +72,19 @@ struct NewProfileView: View {
                     pregnancyMonths: isPregnant ?  pregnancyMonths : nil
                 )
                 if id != nil {
-                    vm.updateUser(user: user)
+                    Task {
+                        vm.updateUser(user: user)
+                        await vm.saveUsers()
+                        vm.selectedUser = vm.users.first
+                    }
                 } else {
                     Task {
                         await vm.addUser(newUser: user)
+                        await vm.saveUsers()
+                        await vm.addVaccines(for: user)
+                        await vm.saveVaccines()
+                        vm.selectedUser = vm.users.first
                     }
-                }
-                Task {
-                    await vm.saveUsers()
-                    vm.selectedUser = vm.users.first
-                    await vm.saveVaccines()
                 }
                 dismiss()
             } label: {

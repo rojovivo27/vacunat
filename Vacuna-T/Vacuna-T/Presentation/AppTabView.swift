@@ -25,7 +25,7 @@ struct AppTabView: View {
                     Image(systemName: "list.clipboard.fill")
                     Text("Cartilla")
                 }
-            Text("Notificaciones")
+            NotificationsView()
                 .tabItem {
                     Image(systemName: "bell.fill")
                     Text("Notificaciones")

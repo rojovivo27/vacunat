@@ -18,7 +18,6 @@ class UserViewModel: ObservableObject {
     
     func addUser(newUser: UserModel) async {
         users.append(newUser)
-        await addVaccines(for: newUser)
     }
     
     func addVaccines(for user: UserModel) async {
@@ -35,17 +34,17 @@ class UserViewModel: ObservableObject {
                 if user.isPregnant && vaccine.edad >= user.pregnancyMonths ?? 9 {
                     let toDateMonths = vaccine.edad - (user.pregnancyMonths ?? 9)
                     let toDate = calendar.date(byAdding: .month, value: toDateMonths, to: Date.now)
-                    vaccines.append(.init(toDate: toDate ?? Date(), vaccine: vaccine))
+                    vaccines.append(.init(id: UUID(), toDate: toDate ?? Date(), vaccine: vaccine))
                 }
             } else if vaccine.anual {
                 if (vaccine.limite ?? 9999) >= months {
-                    vaccines.append(.init(toDate: Date(), vaccine: vaccine))
+                    vaccines.append(.init(id: UUID(), toDate: Date(), vaccine: vaccine))
                 }
             } else {
                 if vaccine.edad >= months {
                     let toDateMonths = vaccine.edad - months
                     let toDate = calendar.date(byAdding: .month, value: toDateMonths, to: user.dateOfBirth)
-                    vaccines.append(.init(toDate: toDate ?? Date(), vaccine: vaccine))
+                    vaccines.append(.init(id: UUID(), toDate: toDate ?? Date(), vaccine: vaccine))
                 }
             }
         }
@@ -74,7 +73,6 @@ class UserViewModel: ObservableObject {
         if let data = try? JSONEncoder().encode(users) {
             UserDefaults.standard.set(data, forKey: userKey)
         }
-        await saveVaccines()
     }
     
     func saveVaccines() async {
@@ -96,4 +94,16 @@ class UserViewModel: ObservableObject {
             vaccines = savedVaccines
         }
     }
+    
+    func markAsDone(vaccination: CalculatedVaccination, for user: UserModel) {
+        if let index = vaccines[user.id.uuidString]?.firstIndex(where: {$0.id == vaccination.id}) {
+            vaccines[user.id.uuidString]?[index].appliedOn = Date.now
+        }
+    }
+    
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter
+    }()
 }
