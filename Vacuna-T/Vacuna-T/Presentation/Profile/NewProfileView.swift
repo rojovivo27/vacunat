@@ -74,10 +74,15 @@ struct NewProfileView: View {
                 if id != nil {
                     vm.updateUser(user: user)
                 } else {
-                    vm.addUser(newUser: user)
+                    Task {
+                        await vm.addUser(newUser: user)
+                    }
                 }
-                vm.saveUsers()
-                vm.selectedUser = vm.users.first
+                Task {
+                    await vm.saveUsers()
+                    vm.selectedUser = vm.users.first
+                    await vm.saveVaccines()
+                }
                 dismiss()
             } label: {
                 Text("Guardar")

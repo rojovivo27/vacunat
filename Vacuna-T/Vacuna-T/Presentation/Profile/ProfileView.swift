@@ -47,9 +47,13 @@ struct ProfileView: View {
                     
                     Button(role: .destructive) {
                         if let id = vm.selectedUser?.id {
-                            vm.deleteUser(id: id)
-                            vm.saveUsers()
-                            vm.selectedUser = vm.users.first
+                            Task {
+                                vm.deleteUser(id: id)
+                                await vm.saveUsers()
+                                vm.deleteVaccines(id: id)
+                                await vm.saveVaccines()
+                                vm.selectedUser = vm.users.first
+                            }
                         }
                     } label: {
                         Text("Eliminar perfil")

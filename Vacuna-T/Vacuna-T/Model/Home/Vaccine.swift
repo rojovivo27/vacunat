@@ -14,7 +14,7 @@ struct InfoVaccine: Decodable {
     let categorias: String
 }
 
-struct ExpertVaccine: Decodable {
+struct ExpertVaccine: Codable {
     let nombre: String
     let categoria: String
     let edad: Int
@@ -31,4 +31,9 @@ struct VaccineContainer: Decodable {
 
 struct VaccineRoot: Decodable {
     let vacunas: VaccineContainer
+}
+
+struct CalculatedVaccination: Codable {
+    let toDate: Date
+    let vaccine: ExpertVaccine
 }
