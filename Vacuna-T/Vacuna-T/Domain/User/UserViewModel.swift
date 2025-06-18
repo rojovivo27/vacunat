@@ -50,7 +50,6 @@ class UserViewModel: ObservableObject {
             }
         }
         self.vaccines[user.id.uuidString] = vaccines.sorted { $0.toDate < $1.toDate }
-        print(vaccines.count)
     }
     
     func deleteUser(id: UUID) {
@@ -88,6 +87,13 @@ class UserViewModel: ObservableObject {
         if let data = UserDefaults.standard.data(forKey: userKey),
            let savedUsers = try? JSONDecoder().decode([UserModel].self, from: data) {
             users = savedUsers
+        }
+    }
+    
+    func loadVaccines() {
+        if let data = UserDefaults.standard.data(forKey: vaccinesKey),
+           let savedVaccines = try? JSONDecoder().decode([String: [CalculatedVaccination]].self, from: data) {
+            vaccines = savedVaccines
         }
     }
 }
