@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct VaccinationListSectionView: View {
-    @ObservedObject var viewModel: UserViewModel
+    
+    @StateObject var viewModel: UserViewModel
 
     var body: some View {
         List {
