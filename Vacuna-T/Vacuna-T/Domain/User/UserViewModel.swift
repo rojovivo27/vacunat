@@ -71,6 +71,7 @@ class UserViewModel: ObservableObject {
     
     func deleteAlerts(for userId: UUID) {
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: getVaccinesIDs(for: userId.uuidString))
+        UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: getVaccinesIDs(for: userId.uuidString))
     }
     
     private func getVaccinesIDs(for userId: String) -> [String] {
@@ -144,10 +145,14 @@ class UserViewModel: ObservableObject {
     func requestPermissions() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {
-                self.permissionRequested = true
+                DispatchQueue.main.async {
+                    self.permissionRequested = true
+                }
                 UserDefaults.standard.set(true, forKey: self.permissionKey)
             } else if let error {
-                self.permissionRequested = false
+                DispatchQueue.main.async {
+                    self.permissionRequested = false
+                }
                 UserDefaults.standard.set(false, forKey: self.permissionKey)
                 print(error.localizedDescription)
             }
@@ -165,24 +170,6 @@ class UserViewModel: ObservableObject {
             users[index].notificationsScheduled = true
             selectedUser = users[index]
         }
-        
-        testAlert()
-    }
-    
-    func testAlert(){
-        let content = UNMutableNotificationContent()
-        content.title = "Feed the cat"
-        content.subtitle = "It looks hungry"
-        content.sound = UNNotificationSound.default
-
-        // show this notification five seconds from now
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-
-        // choose a random identifier
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-
-        // add our notification request
-        UNUserNotificationCenter.current().add(request)
     }
     
     private func createAlert(info: CalculatedVaccination) {
