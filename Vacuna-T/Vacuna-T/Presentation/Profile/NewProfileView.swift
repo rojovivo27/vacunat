@@ -75,7 +75,14 @@ struct NewProfileView: View {
                     Task {
                         vm.updateUser(user: user)
                         await vm.saveUsers()
-                        vm.selectedUser = vm.users.first
+                        vm.deleteVaccines(id: user.id)
+                        await vm.addVaccines(for: user)
+                        await vm.saveVaccines()
+                        if vm.selectedUser?.notificationsScheduled ?? false {
+                                vm.scheduleVaccines(for: vm.selectedUser!.id.uuidString)
+                                await vm.saveUsers()
+                        }
+                        
                     }
                 } else {
                     Task {

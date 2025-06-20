@@ -70,8 +70,9 @@ class UserViewModel: ObservableObject {
     }
     
     func deleteAlerts(for userId: UUID) {
-        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: getVaccinesIDs(for: userId.uuidString))
-        UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: getVaccinesIDs(for: userId.uuidString))
+        let ids = getVaccinesIDs(for: userId.uuidString)
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ids)
+        UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: ids)
     }
     
     private func getVaccinesIDs(for userId: String) -> [String] {
