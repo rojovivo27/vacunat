@@ -41,6 +41,24 @@ struct NotificationsView: View {
                         VaccinationListSectionView(viewModel: viewModel)
                         Spacer()
                     }
+                    .toolbar {
+                        if !(viewModel.selectedUser?.notificationsScheduled ?? true) {
+                            Button("Crear Alertas") {
+                                if viewModel.permissionRequested {
+                                    viewModel.scheduleVaccines(for: viewModel.selectedUser!.id.uuidString)
+                                    Task {
+                                        await viewModel.saveUsers()
+                                    }
+                                } else {
+                                    viewModel.requestPermissions()
+                                }
+                            }
+                        } else {
+                            Button("Eliminar Alertas") {
+                                viewModel.deleteAlerts(for: viewModel.selectedUser!.id)
+                            }
+                        }
+                    }
                 }
             }
             .navigationTitle("Notificaciones")

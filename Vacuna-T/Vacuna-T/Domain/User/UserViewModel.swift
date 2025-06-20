@@ -6,15 +6,22 @@
 //
 
 import Foundation
+import UserNotifications
 
 @MainActor
 class UserViewModel: ObservableObject {
     @Published var users: [UserModel] = []
     @Published var selectedUser: UserModel? = nil
     @Published var vaccines: [String: [CalculatedVaccination]] = [:]
+    @Published var permissionRequested = false
 
     private let userKey = "savedUsers"
     private let vaccinesKey = "savedVaccines"
+    private let permissionKey = "notifications"
+    
+    init(){
+        permissionRequested = UserDefaults.standard.bool(forKey: permissionKey)
+    }
     
     func addUser(newUser: UserModel) async {
         users.append(newUser)
@@ -43,7 +50,7 @@ class UserViewModel: ObservableObject {
             } else {
                 if vaccine.edad >= months {
                     let toDateMonths = vaccine.edad - months
-                    let toDate = calendar.date(byAdding: .month, value: toDateMonths, to: user.dateOfBirth)
+                    let toDate = calendar.date(byAdding: .month, value: toDateMonths, to: Date.now)
                     vaccines.append(.init(id: UUID(), toDate: toDate ?? Date(), vaccine: vaccine))
                 }
             }
@@ -59,6 +66,39 @@ class UserViewModel: ObservableObject {
     
     func deleteVaccines(id: UUID) {
         vaccines.removeValue(forKey: id.uuidString)
+        deleteAlerts(for: id)
+    }
+    
+    func deleteAlerts(for userId: UUID) {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: getVaccinesIDs(for: userId.uuidString))
+    }
+    
+    private func getVaccinesIDs(for userId: String) -> [String] {
+        var ids = [String]()
+        let vaccines = self.vaccines[userId] ?? []
+        for vaccine in vaccines {
+            ids.append(vaccine.id.uuidString)
+            if vaccine.vaccine.anual, let limit = vaccine.vaccine.limite {
+                let calendar = Calendar.current
+                
+                let startDate = vaccine.toDate
+                var date = startDate
+                let endDate = calendar.date(byAdding: .month, value: limit, to: selectedUser?.dateOfBirth ?? Date()) ?? startDate
+                
+                var ocurrences = 1
+                
+                while date <= endDate {
+                    
+                    let id = "\(vaccine.id.uuidString)-\(ocurrences)"
+                    ids.append(id)
+
+                    // Move to next repetition
+                    date = calendar.date(byAdding: .year, value: 1, to: date) ?? endDate
+                    ocurrences = ocurrences + 1
+                }
+            }
+        }
+        return ids
     }
     
     func updateUser(user: UserModel) {
@@ -99,6 +139,119 @@ class UserViewModel: ObservableObject {
         if let index = vaccines[user.id.uuidString]?.firstIndex(where: {$0.id == vaccination.id}) {
             vaccines[user.id.uuidString]?[index].appliedOn = Date.now
         }
+    }
+    
+    func requestPermissions() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+            if success {
+                self.permissionRequested = true
+                UserDefaults.standard.set(true, forKey: self.permissionKey)
+            } else if let error {
+                self.permissionRequested = false
+                UserDefaults.standard.set(false, forKey: self.permissionKey)
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func scheduleVaccines(for userId: String) {
+        let calendar = Calendar.current
+        let date = calendar.date(byAdding: .day, value: -1, to: Date.now) ?? Date.now
+        let vaccines = self.vaccines[userId]?.filter { $0.appliedOn == nil && $0.toDate >= date } ?? []
+        for vaccine in vaccines {
+            createAlert(info: vaccine)
+        }
+        if let index = users.firstIndex(where: {$0.id.uuidString == userId}) {
+            users[index].notificationsScheduled = true
+            selectedUser = users[index]
+        }
+        
+        testAlert()
+    }
+    
+    func testAlert(){
+        let content = UNMutableNotificationContent()
+        content.title = "Feed the cat"
+        content.subtitle = "It looks hungry"
+        content.sound = UNNotificationSound.default
+
+        // show this notification five seconds from now
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+
+        // choose a random identifier
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+
+        // add our notification request
+        UNUserNotificationCenter.current().add(request)
+    }
+    
+    private func createAlert(info: CalculatedVaccination) {
+        
+        let calendar = Calendar.current
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Alerta de vacuna \(info.vaccine.nombre) para \(selectedUser?.name ?? "")"
+        content.subtitle = "Estimada para el dia \(dateFormatter.string(from: info.toDate))"
+        content.sound = UNNotificationSound.default
+        
+        var trigger: UNNotificationTrigger?
+        
+        if info.vaccine.anual {
+            if let limit = info.vaccine.limite {
+                //Schedule anual notifications manually
+                
+                let startDate = info.toDate
+                var date = startDate
+                let endDate = calendar.date(byAdding: .month, value: limit, to: selectedUser?.dateOfBirth ?? Date()) ?? startDate
+                
+                var ocurrences = 1
+                
+                while date <= endDate {
+                    let triggerDate = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute], from: date)
+
+                    let content2 = UNMutableNotificationContent()
+                    content2.title = content.title
+                    content2.body = "Estimada para el dia \(dateFormatter.string(from: date))"
+                    content2.sound = .default
+
+                    let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+                    let id = "\(info.id.uuidString)-\(ocurrences)"
+
+                    let request = UNNotificationRequest(identifier: id, content: content2, trigger: trigger)
+
+                    UNUserNotificationCenter.current().add(request) { error in
+                        if let error = error {
+                            print("Error scheduling notification: \(error)")
+                        }
+                    }
+                    print("Alert created: \(content2.title) , \(content2.subtitle)")
+
+                    // Move to next repetition
+                    date = calendar.date(byAdding: .year, value: 1, to: date) ?? endDate
+                    ocurrences = ocurrences + 1
+                }
+                return
+                
+            } else {
+                //Schedule repeatable time based notification
+                let triggerDate = Calendar.current.dateComponents(
+                    [.year, .month, .day, .hour, .minute],
+                    from: info.toDate
+                )
+                trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: true)
+            }
+        } else {
+            //One time vaccination
+            let triggerDate = Calendar.current.dateComponents(
+                [.year, .month, .day, .hour, .minute],
+                from: info.toDate
+            )
+            trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+        }
+        guard let trigger = trigger else { return }
+        let request = UNNotificationRequest(identifier: info.id.uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
+        print("Alert created: \(content.title) , \(content.subtitle)")
     }
     
     let dateFormatter: DateFormatter = {

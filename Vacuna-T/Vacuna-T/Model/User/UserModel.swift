@@ -14,4 +14,5 @@ struct UserModel: Codable, Identifiable, Hashable {
     var gender: Int // 0: Male - 1: Female
     var isPregnant: Bool
     var pregnancyMonths: Int?
+    var notificationsScheduled: Bool = false
 }
