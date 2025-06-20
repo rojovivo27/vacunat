@@ -41,48 +41,59 @@ struct ProfileView: View {
                         }
                         .pickerStyle(.wheel)
                         
-                        Button("Ver vacunas") {
-                            selectedTab = 3
-                        }
-                        
-                        Button {
-                            isEdition = true
-                        } label: {
-                            Text("Editar perfil")
-                        }
-                        .buttonStyle(.borderedProminent)
-                        
-                        Button(role: .destructive) {
-                            if let id = viewModel.selectedUser?.id {
-                                Task {
-                                    viewModel.deleteUser(id: id)
-                                    await viewModel.saveUsers()
-                                    viewModel.deleteVaccines(id: id)
-                                    await viewModel.saveVaccines()
-                                    viewModel.selectedUser = viewModel.users.first
-                                }
-                            }
-                        } label: {
-                            Text("Eliminar perfil")
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .padding(.bottom, 32)
-                        
                         if viewModel.selectedUser != nil {
                             Text(viewModel.selectedUser?.dateOfBirth.formatted(date: .abbreviated, time: .omitted) ?? "")
+                                .fontWeight(.semibold)
                             if let dob = viewModel.selectedUser?.dateOfBirth {
                                 let components = Calendar.current.dateComponents([.year, .month, .day], from: dob, to: Date.now)
                                 Text("\(components.year ?? 0) años, \(components.month ?? 0) meses y \(components.day ?? 0) días")
+                                    .fontWeight(.medium)
                             }
                         }
+                        
+                        Spacer()
+                        
+                        VStack {
+                            Button {
+                                selectedTab = 3
+                            } label: {
+                                Text("Ver vacunas")
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .tint(.green)
+                            .frame(width: 200)
+                            
+                            Button {
+                                isEdition = true
+                            } label: {
+                                Text("Editar perfil")
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .frame(width: 200)
+                            
+                            Button(role: .destructive) {
+                                if let id = viewModel.selectedUser?.id {
+                                    Task {
+                                        viewModel.deleteUser(id: id)
+                                        await viewModel.saveUsers()
+                                        viewModel.deleteVaccines(id: id)
+                                        await viewModel.saveVaccines()
+                                        viewModel.selectedUser = viewModel.users.first
+                                    }
+                                }
+                            } label: {
+                                Text("Eliminar perfil")
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .frame(width: 200)
+                        }
+                        .padding(.horizontal)
+                        .padding(.bottom, 32)
+                        .frame(maxWidth: .infinity)
                     }
-                }
-                Spacer()
-                
-                Button {
-                    showNewUserView = true
-                } label: {
-                    Text("Agregar nuevo perfil")
                 }
             }
             .navigationTitle("Perfiles")
@@ -92,6 +103,13 @@ struct ProfileView: View {
                 viewModel.loadVaccines()
                 if viewModel.selectedUser == nil {
                     viewModel.selectedUser = viewModel.users.first
+                }
+            }
+            .toolbar {
+                Button {
+                    showNewUserView = true
+                } label: {
+                    Text("Agregar")
                 }
             }
             .sheet(isPresented: $showNewUserView) {

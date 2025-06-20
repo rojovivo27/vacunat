@@ -19,9 +19,11 @@ struct VaccinationListSectionView: View {
                     ForEach(vaccines.filter({ $0.appliedOn == nil})) { vaccination in
                         VStack(alignment: .leading) {
                             Text(vaccination.vaccine.nombre)
+                                .fontWeight(.bold)
                             Text("Fecha estimada: \(viewModel.dateFormatter.string(from: vaccination.toDate))")
                                 .foregroundColor(.gray)
                                 .font(.subheadline)
+                                .fontWeight(.semibold)
                         }
                         .listRowBackground(VaccinationStatus.from(vaccination: vaccination).color)
                         .swipeActions(edge: .trailing, allowsFullSwipe: true) {
@@ -42,10 +44,12 @@ struct VaccinationListSectionView: View {
                     ForEach(vaccines.filter({ $0.appliedOn != nil})) { vaccination in
                         VStack(alignment: .leading) {
                             Text(vaccination.vaccine.nombre)
+                                .fontWeight(.bold)
                             if let appliedOn = vaccination.appliedOn {
                                 Text("Aplicada el: \(viewModel.dateFormatter.string(from: appliedOn))")
                                     .foregroundColor(.gray)
                                     .font(.subheadline)
+                                    .fontWeight(.semibold)
                             }
                         }
                         .listRowBackground(VaccinationStatus.from(vaccination: vaccination).color)
